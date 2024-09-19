@@ -1,0 +1,164 @@
+.div_X6drusO {
+  width: 100%;
+  margin-bottom: auto;
+  display: grid;
+  gap: 10px;
+}
+
+.div_cIos6Ol {
+  overflow: hidden;
+  display: grid;
+
+  /* border-radius: 15px; */
+}
+
+.a_Is5bYsH {
+  /* background: var(--color-item); */
+  /* border-radius: 15px; */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  text-decoration: none;
+  color: inherit;
+
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.div_7ioUcFi {
+  margin: auto;
+}
+
+.div_xKVNGj4 {
+  display: flex;
+  gap: 10px;
+
+  height: 100%;
+}
+
+.div_6X7uHLA {
+  position: relative;
+  display: flex;
+
+  height: 100%;
+
+  border-radius: 15px;
+  overflow: hidden;
+
+  text-decoration: none;
+
+  &.mode-1 {
+    aspect-ratio: 16/9;
+  }
+
+  &.mode-2 {
+    aspect-ratio: 9/16;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+}
+
+.div_y43VZf2 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.div_y43VZf2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.div_AlEPLQv {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  padding: 10px;
+
+  color: #ffffff;
+}
+
+.div_AlEPLQv p {
+  word-break: break-word;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.div_AlEPLQv span {
+  font-size: 13px;
+}
+
+.hr_wOkR2Kx {
+  width: 100%;
+  height: 1px;
+
+  background: rgb(181 178 178 / 0.1);
+  border: none;
+}
+
+.div_Ph0Tbeb {
+  margin: auto;
+  width: min(100%, 750px);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.a_lW7dgpk {
+  background: #1a1a1a;
+  aspect-ratio: 1/1;
+
+  color: inherit;
+
+  display: flex;
+  flex-direction: column;
+  /* grid-template-columns: 40px 1fr 40px; */
+  align-items: center;
+  text-align: center;
+
+  padding: 10px;
+  gap: 10px;
+
+  text-decoration: none;
+  border-radius: 15px;
+
+  overflow: hidden;
+}
+
+.a_lW7dgpk:focus {
+  outline: 3px solid #ffffff;
+}
+
+.a_lW7dgpk div {
+  aspect-ratio: 1/1;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.a_lW7dgpk svg {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}

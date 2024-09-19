@@ -1,0 +1,352 @@
+[
+  {
+    "category_id": "412",
+    "category_name": "⭐ESTRENOS 2024",
+    "parent_id": 0
+  },
+  {
+    "category_id": "428",
+    "category_name": "⭐️PEDIDOS",
+    "parent_id": 0
+  },
+  {
+    "category_id": "141",
+    "category_name": "⭐ESTRENOS 2023",
+    "parent_id": 0
+  },
+  {
+    "category_id": "20",
+    "category_name": "⭐ESTRENOS 2022",
+    "parent_id": 0
+  },
+  {
+    "category_id": "361",
+    "category_name": "⭐RECOMENDAS",
+    "parent_id": 0
+  },
+  {
+    "category_id": "95",
+    "category_name": "⭐ACCION",
+    "parent_id": 0
+  },
+  {
+    "category_id": "161",
+    "category_name": "⭐AVENTURA",
+    "parent_id": 0
+  },
+  {
+    "category_id": "96",
+    "category_name": "⭐ANIME",
+    "parent_id": 0
+  },
+  {
+    "category_id": "443",
+    "category_name": "⭐ANIMACION",
+    "parent_id": 0
+  },
+  {
+    "category_id": "305",
+    "category_name": "⭐SEMANA SANTA",
+    "parent_id": 0
+  },
+  {
+    "category_id": "338",
+    "category_name": "⭐ BÉLICO",
+    "parent_id": 0
+  },
+  {
+    "category_id": "269",
+    "category_name": "⭐BOLLYWOOD",
+    "parent_id": 0
+  },
+  {
+    "category_id": "234",
+    "category_name": "⭐NETFLIX",
+    "parent_id": 0
+  },
+  {
+    "category_id": "46",
+    "category_name": "⭐COMEDY",
+    "parent_id": 0
+  },
+  {
+    "category_id": "97",
+    "category_name": "⭐COLOMBIANAS",
+    "parent_id": 0
+  },
+  {
+    "category_id": "115",
+    "category_name": "⭐CINE VARIADO",
+    "parent_id": 0
+  },
+  {
+    "category_id": "273",
+    "category_name": "⭐CINE ARGENTINA",
+    "parent_id": 0
+  },
+  {
+    "category_id": "444",
+    "category_name": "⭐CINE CHINO",
+    "parent_id": 0
+  },
+  {
+    "category_id": "452",
+    "category_name": " ⭐CINE COREANO",
+    "parent_id": 0
+  },
+  {
+    "category_id": "445",
+    "category_name": "⭐CINE CLASICO",
+    "parent_id": 0
+  },
+  {
+    "category_id": "446",
+    "category_name": "⭐CINE ESPAÑOL",
+    "parent_id": 0
+  },
+  {
+    "category_id": "22",
+    "category_name": "⭐CIENCIA FICCION",
+    "parent_id": 0
+  },
+  {
+    "category_id": "296",
+    "category_name": "⭐ESTRENOS HDCAM",
+    "parent_id": 0
+  },
+  {
+    "category_id": "285",
+    "category_name": "⭐CINE PERUANO",
+    "parent_id": 0
+  },
+  {
+    "category_id": "447",
+    "category_name": "⭐CINE ROMANTICO",
+    "parent_id": 0
+  },
+  {
+    "category_id": "47",
+    "category_name": "⭐CINE TERROR",
+    "parent_id": 0
+  },
+  {
+    "category_id": "457",
+    "category_name": "⭐CINE SUSPENSO",
+    "parent_id": 0
+  },
+  {
+    "category_id": "449",
+    "category_name": "⭐CINE WESTERN",
+    "parent_id": 0
+  },
+  {
+    "category_id": "276",
+    "category_name": "⭐DC UNIVERSE",
+    "parent_id": 0
+  },
+  {
+    "category_id": "45",
+    "category_name": "⭐DRAMA",
+    "parent_id": 0
+  },
+  {
+    "category_id": "44",
+    "category_name": "⭐FAMILIA",
+    "parent_id": 0
+  },
+  {
+    "category_id": "62",
+    "category_name": "⭐INFANTILES",
+    "parent_id": 0
+  },
+  {
+    "category_id": "310",
+    "category_name": "⭐INTRIGA",
+    "parent_id": 0
+  },
+  {
+    "category_id": "448",
+    "category_name": " ⭐MARVEL STUDIOS",
+    "parent_id": 0
+  },
+  {
+    "category_id": "438",
+    "category_name": "⭐️PELICULAS 60 FPS",
+    "parent_id": 0
+  },
+  {
+    "category_id": "436",
+    "category_name": "⭐️PELICULAS 3D",
+    "parent_id": 0
+  },
+  {
+    "category_id": "103",
+    "category_name": "⭐CINE RETRO",
+    "parent_id": 0
+  },
+  {
+    "category_id": "434",
+    "category_name": "⭐️CINE MÉXICO",
+    "parent_id": 0
+  },
+  {
+    "category_id": "51",
+    "category_name": "⭐PELICULAS ADULTOS",
+    "parent_id": 0
+  },
+  {
+    "category_id": "94",
+    "category_name": "⭐PELICULAS 4K",
+    "parent_id": 0
+  },
+  {
+    "category_id": "81",
+    "category_name": "⭐RELIGION",
+    "parent_id": 0
+  },
+  {
+    "category_id": "105",
+    "category_name": "⭐SAGAS",
+    "parent_id": 0
+  },
+  {
+    "category_id": "80",
+    "category_name": "⭐VARIAS PELICULAS",
+    "parent_id": 0
+  },
+  {
+    "category_id": "344",
+    "category_name": "⭐WWE",
+    "parent_id": 0
+  },
+  {
+    "category_id": "472",
+    "category_name": "⭐️NAVIDAD",
+    "parent_id": 0
+  },
+  {
+    "category_id": "473",
+    "category_name": "⭐️HBO",
+    "parent_id": 0
+  },
+  {
+    "category_id": "474",
+    "category_name": "⭐️DISNEY",
+    "parent_id": 0
+  },
+  {
+    "category_id": "475",
+    "category_name": "⭐️CLASICAS",
+    "parent_id": 0
+  },
+  {
+    "category_id": "476",
+    "category_name": "⭐️ANTIGUAS",
+    "parent_id": 0
+  },
+  {
+    "category_id": "477",
+    "category_name": "⭐️ABC",
+    "parent_id": 0
+  },
+  {
+    "category_id": "479",
+    "category_name": "⭐️⭐️CINE EN INGLÉS",
+    "parent_id": 0
+  },
+  {
+    "category_id": "471",
+    "category_name": "⭐️MUSICA",
+    "parent_id": 0
+  },
+  {
+    "category_id": "470",
+    "category_name": "⭐️MISTERIO",
+    "parent_id": 0
+  },
+  {
+    "category_id": "469",
+    "category_name": "⭐️FANTACIA",
+    "parent_id": 0
+  },
+  {
+    "category_id": "468",
+    "category_name": "⭐️FAMILIA",
+    "parent_id": 0
+  },
+  {
+    "category_id": "467",
+    "category_name": "⭐️DOCUMENTALES",
+    "parent_id": 0
+  },
+  {
+    "category_id": "466",
+    "category_name": "⭐️DEPORTES",
+    "parent_id": 0
+  },
+  {
+    "category_id": "464",
+    "category_name": "⭐️CRIMEN",
+    "parent_id": 0
+  },
+  {
+    "category_id": "463",
+    "category_name": "⭐️CINE SAGA",
+    "parent_id": 0
+  },
+  {
+    "category_id": "462",
+    "category_name": "⭐️ARTES MARCIALES",
+    "parent_id": 0
+  },
+  {
+    "category_id": "511",
+    "category_name": "CINE URUGUAY",
+    "parent_id": 0
+  },
+  {
+    "category_id": "510",
+    "category_name": "CINE REP. DOMINICANA",
+    "parent_id": 0
+  },
+  {
+    "category_id": "509",
+    "category_name": "CINE PUERTO RICO",
+    "parent_id": 0
+  },
+  {
+    "category_id": "508",
+    "category_name": "CINE PERU",
+    "parent_id": 0
+  },
+  {
+    "category_id": "507",
+    "category_name": "CINE MEXICO",
+    "parent_id": 0
+  },
+  {
+    "category_id": "506",
+    "category_name": "CINE ECUADOR",
+    "parent_id": 0
+  },
+  {
+    "category_id": "499",
+    "category_name": "CINE CHILE",
+    "parent_id": 0
+  },
+  {
+    "category_id": "498",
+    "category_name": "CINE BOLIVIA",
+    "parent_id": 0
+  },
+  {
+    "category_id": "497",
+    "category_name": "CINE ARGENTINA",
+    "parent_id": 0
+  },
+  {
+    "category_id": "512",
+    "category_name": "CINE VENEZUELA",
+    "parent_id": 0
+  }
+]
