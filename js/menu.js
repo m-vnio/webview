@@ -89,7 +89,9 @@ class Layout {
     const b = a.firstElementChild;
     a.innerHTML = "";
 
-    const path = location.pathname.split("/")[1];
+    const path = location.pathname
+      .split("/")
+      .find((string) => string.includes(".html"));
 
     const focus =
       b.querySelector(
@@ -100,7 +102,7 @@ class Layout {
     focus.classList.add("focus");
 
     b.querySelector("button").addEventListener("click", () => {
-      location.href = `/search.html?from=${encodeURIComponent(
+      location.href = `./search.html?from=${encodeURIComponent(
         path.slice(0, path.lastIndexOf("."))
       )}`;
     });
