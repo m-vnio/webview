@@ -229,8 +229,8 @@ function one(id) {
       const data = JSON.parse(button.getAttribute("data-data"));
 
       fetchWebElement(
-        functions.server(
-          `https://www3.animeflv.net/ver/${reativities.data.value.href
+        useThis.functions.server(
+          `https://www3.animeflv.net/ver/${useThis.reactivity.datas.value.href
             .split("/")
             .pop()}-${data}`
         )

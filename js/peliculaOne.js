@@ -53,17 +53,17 @@ function one(id) {
     true
   );
 
-  const intersectionObserver = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          observer.unobserve(entry.target);
-          useThis.functions.dataLoad();
-        }
-      });
-    },
-    { root: null, rootMargin: "0px", threshold: 0 }
-  );
+  // const intersectionObserver = new IntersectionObserver(
+  //   (entries, observer) => {
+  //     entries.forEach((entry) => {
+  //       if (entry.isIntersecting) {
+  //         observer.unobserve(entry.target);
+  //         useThis.functions.dataLoad();
+  //       }
+  //     });
+  //   },
+  //   { root: null, rootMargin: "0px", threshold: 0 }
+  // );
 
   useThis.reactivity.load.observe((load) => {
     elementDisplay($elements.itemNull, load);
@@ -118,8 +118,9 @@ function one(id) {
   };
 
   $elements.buttonPlay.addEventListener("click", () => {
-    console.log(
-      `http://tvlatino.club:2082/movie/MLKP90SAZs/4Z3KWMe7GnW2/${useThis.reactivity.datas.value.movie_data.stream_id}.${useThis.reactivity.datas.value.movie_data.container_extension}`
+    Android.openWithDefault(
+      `http://tvlatino.club:2082/movie/MLKP90SAZs/4Z3KWMe7GnW2/${useThis.reactivity.datas.value.movie_data.stream_id}.${useThis.reactivity.datas.value.movie_data.container_extension}`,
+      "video/*"
     );
   });
 
