@@ -2,6 +2,9 @@
   width: 60px;
   height: 100%;
   display: flex;
+
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .div_BkWERok {

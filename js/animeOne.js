@@ -298,14 +298,13 @@ function one(id) {
                 return scriptFunction();
               };
 
-              const display = $elements.divLoadVideo.style.display;
-              history.back();
-
-              if (display != "none") {
+              if ($elements.divLoadVideo.style.display != "none") {
                 Android.openWithDefault(
                   validate(...final()).sources[0].file,
                   "video/*"
                 );
+
+                history.back();
               }
             }
           }
