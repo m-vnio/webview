@@ -48,7 +48,9 @@ function one(id) {
                           </div>
                         </div>
                     </div>
-        
+
+                    <div id="divLoadVideo" class="div_g82EBDS" style="display:none"><div class="element-loader" style="--color:#ffffff; --pixel:60px"></div></div>
+
                 </div>    
             `);
 
@@ -96,31 +98,6 @@ function one(id) {
   useThis.functions.dataLoad = () => {
     const length = $elements.itemTrue.children.length;
 
-    // const encodeQueryString = encodeQueryObject({
-    //   route: "/pelicula",
-    //   //   search: $elements.inputSearch.value.trim(),
-    //   //   category: $elements.divGenres
-    //   //     .querySelector("button.focus")
-    //   //     .getAttribute("data-id"),
-    //   start: length,
-    //   end: 50,
-    // });
-
-    // console.log(encodeQueryString);
-
-    // fetch(
-    //   "https://api-fetch.victor01sp.com/get.php?url=" +
-    //     encodeURIComponent(
-    //       `http://tvlatino.club:2082/player_api.php?username=MLKP90SAZs&password=4Z3KWMe7GnW2&action=get_vod_info&vod_id=${id}`
-    //     )
-    // )
-    //   .then((res) => res.json())
-    //   .then((data) => {
-    //     useThis.value.datas = useThis.value.datas.concat(data);
-    //     useThis.reactivity.datas.value = data;
-    //     useThis.reactivity.load.value = false;
-    //   });
-
     fetchWebElement(
       useThis.functions.fetch(`https://cuevana.biz/pelicula/${id}/${id}`)
     ).then(($text) => {
@@ -143,6 +120,9 @@ function one(id) {
   };
 
   $elements.buttonPlay.addEventListener("click", () => {
+    history.pushState(null, null, location.href);
+    elementDisplay($elements.divLoadVideo, true);
+
     const countArray = (array) => (array.length ? array : false);
 
     const videos =
@@ -199,21 +179,20 @@ function one(id) {
                 return scriptFunction();
               };
 
-              Android.openWithDefault(
-                validate(...final()).sources[0].file,
-                "video/*"
-              );
+              const display = $elements.divLoadVideo.style.display;
+              history.back();
+
+              if (display != "none") {
+                Android.openWithDefault(
+                  validate(...final()).sources[0].file,
+                  "video/*"
+                );
+              }
             }
           }
         }
       });
-      // console.log($text);
     });
-
-    // Android.openWithDefault(
-    //   `http://tvlatino.club:2082/movie/MLKP90SAZs/4Z3KWMe7GnW2/${useThis.reactivity.datas.value.movie_data.stream_id}.${useThis.reactivity.datas.value.movie_data.container_extension}`,
-    //   "video/*"
-    // );
   });
 
   addEventListener("key-RfwNgjwVeLgKee7", ({ detail }) => {
@@ -235,6 +214,13 @@ function one(id) {
       if (keydowns[index - 1]) {
         keydowns[index - 1].focus();
       }
+    }
+  });
+
+  addEventListener("popstate", () => {
+    if ($elements.divLoadVideo.style.display != "none") {
+      elementDisplay($elements.divLoadVideo, false);
+      return;
     }
   });
 

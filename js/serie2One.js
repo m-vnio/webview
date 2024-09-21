@@ -8,16 +8,10 @@ function one(id) {
       datas: [],
     },
     functions: {
-      server: (url) => {
-        return `https://api-fetch.victor01sp.com/get.php?url=${encodeURIComponent(
+      fetch: (url = "") =>
+        `https://api-fetch.victor01sp.com/get.php?url=${encodeURIComponent(
           url
-        )}`;
-      },
-      img: (url) => {
-        return `https://img.victor01sp.com/index.php?url=${encodeURIComponent(
-          url
-        )}`;
-      },
+        )}`,
     },
   };
 
@@ -65,7 +59,7 @@ function one(id) {
                     </div>
 
                     <div id="divLoadVideo" class="div_g82EBDS" style="display:none"><div class="element-loader" style="--color:#ffffff; --pixel:60px"></div></div>
-
+        
                 </div>    
             `);
 
@@ -84,31 +78,20 @@ function one(id) {
 
   useThis.reactivity.datas.observe((data) => {
     if (Object.keys(data).length) {
-      console.log(data);
       $elements.backdrop.src = `https://img.victor01sp.com/index.php?url=${encodeURIComponent(
-        data.poster
+        data.images.poster.replace("/original/", "/w342/")
       )}`;
 
       $elements.image.src = `https://img.victor01sp.com/index.php?url=${encodeURIComponent(
-        data.poster
+        data.images.poster.replace("/original/", "/w342/")
       )}`;
-      $elements.title.textContent = data.title;
-      $elements.sinopsis.textContent = data.description;
 
-      const output = Array.from(
-        { length: Math.ceil(data.episodes.length / 50) },
-        (_, i) => i * 50 + 1
-      );
+      $elements.title.textContent = data.titles.name;
+      $elements.sinopsis.textContent = data.overview;
 
-      $elements.season.innerHTML = output
-        .map((season, index, array) => {
-          const next = array[index + 1] - 1 || data.episodes.length;
-
-          return `<button class="button_c0MLqUI ${
-            index == 0 ? "focus" : ""
-          }" data-keydown="key-qCVDDxQ4q1Wnr5o" data-index="${
-            season - 1
-          }">${season} - ${next}</button>`;
+      $elements.season.innerHTML = data.seasons
+        .map((season, index) => {
+          return `<button class="button_c0MLqUI" data-keydown="key-qCVDDxQ4q1Wnr5o" data-index="${index}">Temporada ${season.number}</button>`;
         })
         .join("");
 
@@ -117,68 +100,49 @@ function one(id) {
   });
 
   useThis.functions.seasonIndex = (seasonIndex) => {
-    $elements.chapter.innerHTML = useThis.reactivity.datas.value.episodes
-      .slice(seasonIndex, seasonIndex + 50)
+    $elements.chapter.innerHTML = useThis.reactivity.datas.value.seasons[
+      seasonIndex
+    ].episodes
       .map((episode) => {
-        return `<button class="button_c0MLqUI" style="background: rgb(0 0 0 / 0.1);" data-keydown="key-7HbIa9IIQgtEjQM" data-data="${encodeInput(
+        return `<button class="button_27QVWfx" data-keydown="key-7HbIa9IIQgtEjQM" data-data="${encodeInput(
           JSON.stringify(episode)
         )}">
-        <span style="font-size:15px; font-weight:bold">Episodio ${episode}</span>
-      </button>`;
+          <picture class="picture_xPpWSeU">
+            <img style="margin-bottom:auto; border-radius:5px;" src="https://img.victor01sp.com/index.php?url=${
+              episode.image
+            }">
+          </picture>
+          <span class="span_Vth2Cyo">${episode.title}</span>
+        </button>`;
       })
       .join("");
 
-    // Array.from($elements.season.children).forEach((d, i) => {
-    //   if (seasonIndex == i) d.classList.add("focus");
-    //   else d.classList.remove("focus");
-    // });
+    Array.from($elements.season.children).forEach((d, i) => {
+      if (seasonIndex == i) d.classList.add("focus");
+      else d.classList.remove("focus");
+    });
   };
 
   useThis.functions.dataLoad = () => {
+    const length = $elements.itemTrue.children.length;
+
     fetchWebElement(
-      useThis.functions.server(`https://www3.animeflv.net/anime/${id}`)
+      useThis.functions.fetch(`https://cuevana.biz/serie/${id}/${id}`)
     ).then(($text) => {
-      const script = Array.from($text.querySelectorAll("script")).find(
-        (script) => script.innerHTML.includes("var anime_info =")
+      const __NEXT_DATA__ = JSON.parse(
+        $text.querySelector("#__NEXT_DATA__").textContent
       );
 
-      if (script) {
-        const stringVal = script.innerHTML
-          .slice(0, script.innerHTML.indexOf("$"))
-          .split("var")
-          .map((a) => (a.trim() ? `a.${a.trim()}` : ""))
-          .join("");
-
-        const objectVal = new Function(
-          ["const a = {}", stringVal, "return a"].join(";")
-        )();
-
-        const data = {
-          id: objectVal.anime_info[0],
-          title: $text.querySelector("h1.Title").textContent,
-          description: $text.querySelector(".Description p").textContent,
-          poster: `https://www3.animeflv.net${$text
-            .querySelector(`figure img`)
-            .getAttribute("src")}`,
-          href: `/anime/${objectVal.anime_info[2]}`,
-          type: $text.querySelector(".Type").textContent,
-          genres: Array.from($text.querySelectorAll(".Nvgnrs a")).map(
-            (a) => a.textContent
-          ),
-          progress: $text.querySelector(".fa-tv").textContent,
-          episodes: objectVal.episodes.map((data) => data[0]).reverse(),
-        };
-
-        // reativities.load.value = false;
-
-        useThis.value.datas = useThis.value.datas.concat(data);
-        useThis.reactivity.datas.value = data;
-        useThis.reactivity.load.value = false;
-      }
-
-      Array.from($text.querySelectorAll("img")).forEach((img) =>
-        img.removeAttribute("src")
+      useThis.value.datas = useThis.value.datas.concat(
+        __NEXT_DATA__.props.pageProps.thisSerie
       );
+      useThis.reactivity.datas.value = __NEXT_DATA__.props.pageProps.thisSerie;
+      useThis.reactivity.load.value = false;
+
+      Array.from($text.querySelectorAll("img")).forEach((img) => {
+        img.removeAttribute("src");
+        img.removeAttribute("srcset");
+      });
     });
   };
 
@@ -232,88 +196,92 @@ function one(id) {
 
       const data = JSON.parse(button.getAttribute("data-data"));
 
-      fetchWebElement(
-        useThis.functions.server(
-          `https://www3.animeflv.net/ver/${useThis.reactivity.datas.value.href
-            .split("/")
-            .pop()}-${data}`
-        )
-      ).then(($text) => {
-        console.log($text);
+      let url = data.url.slug.replace("series/", "serie/");
+      url = url.replace("/seasons/", "/temporada/");
+      url = url.replace("/episodes/", "/episodio/");
+      url = `https://cuevana.biz/${url}`;
 
-        const script = Array.from($text.querySelectorAll("script")).find(
-          (script) => script.innerHTML.includes("var anime_id")
+      // console.log(data);
+      fetchWebElement(useThis.functions.fetch(url)).then(($text) => {
+        const __NEXT_DATA__ = JSON.parse(
+          $text.querySelector("#__NEXT_DATA__").textContent
         );
 
-        if (script) {
-          const scriptInnerHTML = script.innerHTML;
-          const string1 = scriptInnerHTML.slice(
-            0,
-            scriptInnerHTML.indexOf("$(document)")
-          );
-          const string2 = [
-            "const data = {}",
-            string1.split("var").join("data . "),
-            "return data",
-          ].join(";");
+        const countArray = (array) => (array.length ? array : false);
 
-          const scriptFunction = new Function(string2);
-          const scriptReturn = scriptFunction();
+        const videos =
+          countArray(__NEXT_DATA__.props.pageProps.episode.videos.latino) ||
+          countArray(__NEXT_DATA__.props.pageProps.episode.videos.spanish) ||
+          countArray(__NEXT_DATA__.props.pageProps.episode.videos.english) ||
+          countArray(__NEXT_DATA__.props.pageProps.episode.videos.japanese) ||
+          [];
 
-          const streamwish = scriptReturn.videos.SUB.find(
-            (video) => video.server == "sw"
-          );
+        const video = videos.find((video) => video.cyberlocker == "streamwish");
 
-          if (streamwish) {
-            const content = Android.getPageContent(streamwish.code);
-            const $content = document.createElement("div");
-            $content.innerHTML = content;
+        fetchWebElement(useThis.functions.fetch(video.result)).then(($text) => {
+          Array.from($text.querySelectorAll("img")).forEach((img) => {
+            img.removeAttribute("src");
+            img.removeAttribute("srcset");
+          });
 
-            const script = Array.from($content.querySelectorAll("script")).find(
-              (script) => script.innerHTML.includes("eval")
-            );
+          Array.from($text.querySelectorAll("script")).forEach((script) => {
+            const urls = extractURLs(script.innerHTML);
+            if (urls[0]) {
+              const url = urls[0].slice(0, urls[0].lastIndexOf("'"));
 
-            if (script) {
-              const script2 = script.innerHTML.slice(
-                script.innerHTML.indexOf("}('") + 2,
-                script.innerHTML.lastIndexOf("))")
-              );
+              if (url) {
+                const content = Android.getPageContent(url);
+                const $content = document.createElement("div");
+                $content.innerHTML = content;
 
-              const final = new Function(
-                `const fn = (...p) => p; return fn(${script2})`
-              );
+                const script = Array.from(
+                  $content.querySelectorAll("script")
+                ).find((script) => script.innerHTML.includes("eval"));
 
-              const validate = (p, a, c, k, e, d) => {
-                while (c--)
-                  if (k[c]) {
-                    p = p.replace(
-                      new RegExp("\\b" + c.toString(a) + "\\b", "g"),
-                      k[c]
+                if (script) {
+                  const script2 = script.innerHTML.slice(
+                    script.innerHTML.indexOf("}('") + 2,
+                    script.innerHTML.lastIndexOf("))")
+                  );
+
+                  const final = new Function(
+                    `const fn = (...p) => p; return fn(${script2})`
+                  );
+
+                  const validate = (p, a, c, k, e, d) => {
+                    while (c--)
+                      if (k[c]) {
+                        p = p.replace(
+                          new RegExp("\\b" + c.toString(a) + "\\b", "g"),
+                          k[c]
+                        );
+                      }
+
+                    const scriptFunction = new Function(
+                      `return ${p.slice(p.indexOf("{"), p.indexOf(");"))}`
+                    );
+                    return scriptFunction();
+                  };
+
+                  const display = $elements.divLoadVideo.style.display;
+                  history.back();
+
+                  if (display != "none") {
+                    Android.openWithDefault(
+                      validate(...final()).sources[0].file,
+                      "video/*"
                     );
                   }
-
-                const scriptFunction = new Function(
-                  `return ${p.slice(p.indexOf("{"), p.indexOf(");"))}`
-                );
-                return scriptFunction();
-              };
-
-              const display = $elements.divLoadVideo.style.display;
-              history.back();
-
-              if (display != "none") {
-                Android.openWithDefault(
-                  validate(...final()).sources[0].file,
-                  "video/*"
-                );
+                }
               }
             }
-          }
-        }
+          });
+        });
 
-        Array.from($text.querySelectorAll("img")).forEach((img) =>
-          img.removeAttribute("src")
-        );
+        Array.from($text.querySelectorAll("img")).forEach((img) => {
+          img.removeAttribute("src");
+          img.removeAttribute("srcset");
+        });
       });
     }
   });

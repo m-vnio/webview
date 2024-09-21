@@ -19,7 +19,7 @@ function all() {
           <div class="div_1YmtSIZ">
           
               <header class="header_GxE7xRu">
-                  <h2 style="margin: auto 0">Peliculas</h2>
+                  <h2 style="margin: auto 0">Series</h2>
               </header>
   
               <div class="div_xbSsVY0">
@@ -68,7 +68,7 @@ function all() {
         // console.log(data);
         const template = document.createElement("div");
 
-        template.innerHTML = `<a href="./pelicula2.html?id=${
+        template.innerHTML = `<a href="./serie2.html?id=${
           data.TMDbId
         }" class="a_YOLFLmd" data-keydown="key-qCVDDxQ4q1Wnr5o">
           <picture class="picture_GJjPp2J"><img data-src="${`https://img.victor01sp.com/index.php?url=${encodeURIComponent(
@@ -104,7 +104,7 @@ function all() {
       useThis.functions.fetch(
         gender
           ? `https://cuevana.biz/genero/${gender}/page/${length}`
-          : `https://cuevana.biz/peliculas/page/${length}`
+          : `https://cuevana.biz/series/page/${length}`
       )
     ).then(($text) => {
       const __NEXT_DATA__ = JSON.parse(
@@ -118,9 +118,10 @@ function all() {
       useThis.reactivity.datas.value = __NEXT_DATA__.props.pageProps.movies;
       useThis.reactivity.load.value = false;
 
-      Array.from($text.querySelectorAll("img")).forEach((img) =>
-        img.removeAttribute("src")
-      );
+      Array.from($text.querySelectorAll("img")).forEach((img) => {
+        img.removeAttribute("src");
+        img.removeAttribute("srcset");
+      });
     });
   };
 
@@ -277,24 +278,6 @@ function all() {
       }
     }
   });
-
-  fetch("./json/categoria_pelicula2.json")
-    .then((res) => res.json())
-    .then((json) => {
-      const fragment = document.createDocumentFragment();
-      fragment.append(
-        ...json.map((data) => {
-          return createNodeElement(`
-        <button data-keydown="key-UOO23MW014kVXu" data-id="${data
-          .split(" ")
-          .join("-")
-          .toLowerCase()}">${data}</button>
-        `);
-        })
-      );
-
-      $elements.divGenres.append(fragment);
-    });
 
   useThis.functions.dataLoad();
   return $element;

@@ -40,7 +40,7 @@ addEventListener("DOMContentLoaded", () => {
       datas: [],
     },
     functions: {
-      server: (url) => {
+      fetch: (url) => {
         return `https://api-fetch.victor01sp.com/get.php?url=${encodeURIComponent(
           url
         )}`;
@@ -87,6 +87,16 @@ addEventListener("DOMContentLoaded", () => {
           .getAttribute("data-id") == "pelicula"
       ) {
         useThis.functions.dateRenderPelicula(datas);
+      }
+
+      if (
+        ["pelicula2", "serie2"].includes(
+          $elements.divGenres
+            .querySelector("button.focus")
+            .getAttribute("data-id")
+        )
+      ) {
+        useThis.functions.dateRenderPelicula2(datas);
       }
 
       if (
@@ -171,6 +181,33 @@ addEventListener("DOMContentLoaded", () => {
     }
   };
 
+  useThis.functions.dateRenderPelicula2 = (datas) => {
+    const fragment = document.createDocumentFragment();
+    fragment.append(
+      ...datas.map((data) => {
+        const type =
+          data.url.slug.split("/")[0] == "movies" ? "pelicula2" : "serie2";
+
+        const template = document.createElement("div");
+
+        template.innerHTML = `<a href="./${type}.html?id=${
+          data.TMDbId
+        }" class="a_YOLFLmd" data-keydown="key-qCVDDxQ4q1Wnr5o">
+          <picture class="picture_GJjPp2J"><img data-src="${`https://img.victor01sp.com/index.php?url=${encodeURIComponent(
+            data.images.poster.replace("/original/", "/w185/")
+          )}`}"></picture>
+          <span>${data.titles.name}</span>
+        </a>`;
+
+        IntersectionObserverImage.load(template.querySelector("img"), true);
+
+        return template.firstElementChild;
+      })
+    );
+
+    $elements.itemTrue.append(fragment);
+  };
+
   useThis.functions.dateRenderSerie = (datas) => {
     const fragment = document.createDocumentFragment();
     fragment.append(
@@ -242,7 +279,7 @@ addEventListener("DOMContentLoaded", () => {
     });
 
     fetchWebElement(
-      useThis.functions.server(
+      useThis.functions.fetch(
         `https://www3.animeflv.net/browse?${encodeQueryString}`
       )
     ).then((element) => {
@@ -283,6 +320,31 @@ addEventListener("DOMContentLoaded", () => {
         useThis.reactivity.datas.value = data;
         useThis.reactivity.load.value = false;
       });
+  };
+
+  useThis.functions.dataLoadPelicula2 = () => {
+    // const length = Math.floor($elements.itemTrue.children.length / 24) + 1;
+
+    fetchWebElement(
+      useThis.functions.fetch(
+        `https://cuevana.biz/search?q=${searchParams.get("search")}`
+      )
+    ).then(($text) => {
+      const __NEXT_DATA__ = JSON.parse(
+        $text.querySelector("#__NEXT_DATA__").textContent
+      );
+
+      useThis.value.datas = useThis.value.datas.concat(
+        __NEXT_DATA__.props.pageProps.movies
+      );
+
+      useThis.reactivity.datas.value = __NEXT_DATA__.props.pageProps.movies;
+      useThis.reactivity.load.value = false;
+
+      Array.from($text.querySelectorAll("img")).forEach((img) =>
+        img.removeAttribute("src")
+      );
+    });
   };
 
   useThis.functions.dataLoadSerie = () => {
@@ -338,6 +400,16 @@ addEventListener("DOMContentLoaded", () => {
         .getAttribute("data-id") == "pelicula"
     ) {
       useThis.functions.dataLoadPelicula();
+    }
+
+    if (
+      ["pelicula2", "serie2"].includes(
+        $elements.divGenres
+          .querySelector("button.focus")
+          .getAttribute("data-id")
+      )
+    ) {
+      useThis.functions.dataLoadPelicula2();
     }
 
     if (
