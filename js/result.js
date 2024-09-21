@@ -327,7 +327,9 @@ addEventListener("DOMContentLoaded", () => {
 
     fetchWebElement(
       useThis.functions.fetch(
-        `https://cuevana.biz/search?q=${searchParams.get("search")}`
+        `https://cuevana.biz/search?q=${encodeURIComponent(
+          searchParams.get("search")
+        )}`
       )
     ).then(($text) => {
       const __NEXT_DATA__ = JSON.parse(
