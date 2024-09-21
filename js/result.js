@@ -550,7 +550,7 @@ addEventListener("DOMContentLoaded", () => {
   $elements.search.textContent = searchParams.get("search");
   (
     $elements.divGenres.querySelector(
-      `button[data-id="${searchParams.get("from")}"]`
+      `button[data-id="${searchParams.get("from") || "pelicula"}"]`
     ) || document.createElement("div")
   ).classList.add("focus");
 
