@@ -16,7 +16,7 @@ class Layout {
                         <!-- <span>Lives</span> -->
                     </button>
 
-                    <a href="./live.html" class="a_lW7dgpk" data-name="live" data-keydown="key-EeqSpNOJkulRszU">
+                    <a href="./live.html" class="a_lW7dgpk" data-name="live" data-from="live" data-keydown="key-EeqSpNOJkulRszU">
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-svg-name="fi fi-rr-live">
                                 <path
@@ -27,7 +27,7 @@ class Layout {
                         <!-- <span>Lives</span> -->
                     </a>
 
-                    <a href="./pelicula.html" class="a_lW7dgpk" data-name="pelicula" data-keydown="key-EeqSpNOJkulRszU">
+                    <a href="./pelicula.html" class="a_lW7dgpk" data-name="pelicula" data-from="pelicula" data-keydown="key-EeqSpNOJkulRszU">
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                 data-svg-name="fi fi-rr-clapperboard-play">
@@ -39,7 +39,7 @@ class Layout {
                         <!-- <span>Pelicula</span> -->
                     </a>
 
-                    <a href="./pelicula2.html" class="a_lW7dgpk" data-name="pelicula2" data-keydown="key-EeqSpNOJkulRszU">
+                    <a href="./pelicula2.html" class="a_lW7dgpk" data-name="pelicula2" data-from="peliculasyseries" data-keydown="key-EeqSpNOJkulRszU">
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                 data-svg-name="fi fi-rr-clapperboard-play">
@@ -51,7 +51,7 @@ class Layout {
                         <!-- <span>Pelicula2</span> -->
                     </a>
 
-                    <a href="./serie.html" class="a_lW7dgpk" data-name="serie" data-keydown="key-EeqSpNOJkulRszU">
+                    <a href="./serie.html" class="a_lW7dgpk" data-name="serie" data-from="serie" data-keydown="key-EeqSpNOJkulRszU">
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-svg-name="fi fi-rr-tv-retro">
                                 <path
@@ -62,7 +62,7 @@ class Layout {
                         <!-- <span>Serie</span> -->
                     </a>
 
-                    <a href="./serie2.html" class="a_lW7dgpk" data-name="serie2" data-keydown="key-EeqSpNOJkulRszU">
+                    <a href="./serie2.html" class="a_lW7dgpk" data-name="serie2" data-from="peliculasyseries" data-keydown="key-EeqSpNOJkulRszU">
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-svg-name="fi fi-rr-tv-retro">
                                 <path
@@ -73,7 +73,7 @@ class Layout {
                         <!-- <span>Serie</span> -->
                     </a>
 
-                    <a href="./anime.html" class="a_lW7dgpk" data-name="anime" data-keydown="key-EeqSpNOJkulRszU">
+                    <a href="./anime.html" class="a_lW7dgpk" data-name="anime" data-from="anime" data-keydown="key-EeqSpNOJkulRszU">
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                 data-svg-name="fi fi-rr-face-awesome">
@@ -96,7 +96,7 @@ class Layout {
                         <!-- <span>Anime</span> -->
                     </a>
 
-                    <a href="https://m-vnio.github.io/share-webview/index.html" class="a_lW7dgpk" data-name="anime" data-keydown="key-EeqSpNOJkulRszU">
+                    <a href="https://m-vnio.github.io/share-webview/index.html" class="a_lW7dgpk" data-name="anime" data-from="anime" data-keydown="key-EeqSpNOJkulRszU">
                         <div>
                             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-svg-name="fi fi-rr-data-transfer">
                                 <path
@@ -126,8 +126,10 @@ class Layout {
     focus.classList.add("focus");
 
     b.querySelector("button").addEventListener("click", () => {
+      //   console.log(focus.getAttribute("data-from"));
+
       location.href = `./search.html?from=${encodeURIComponent(
-        path.slice(0, path.lastIndexOf("."))
+        focus.getAttribute("data-from")
       )}`;
     });
 

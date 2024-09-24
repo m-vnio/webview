@@ -16,23 +16,21 @@ function one(id) {
   };
 
   const $element = createNodeElement(`
-                <div class="div_1YmtSIZ">
+                <div class="div_1YmtSIZ div_lMqzJhY">
         
                     <picture class="picture_HsVx30S">
                         <img style="display: none;" id="backdrop" src="" alt="">
                     </picture>
-        
-                    <header class="header_GxE7xRu">
-                        <header class="header_GxE7xRu header_uxi6Edf">
-        
-                          <button class="button_mzTN7sc" data-keydown="key-RfwNgjwVeLgKee7" onclick="history.back()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-svg-name="fi fi-rr-angle-left"><path d="M17.17,24a1,1,0,0,1-.71-.29L8.29,15.54a5,5,0,0,1,0-7.08L16.46.29a1,1,0,1,1,1.42,1.42L9.71,9.88a3,3,0,0,0,0,4.24l8.17,8.17a1,1,0,0,1,0,1.42A1,1,0,0,1,17.17,24Z"></path></svg></button>
-                          <div class="div_gKpyXFL">
-                            <button id="buttonPlay" class="button_mzTN7sc" data-keydown="key-RfwNgjwVeLgKee7"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-svg-name="fi fi-rr-list"><path d="M7,6H23a1,1,0,0,0,0-2H7A1,1,0,0,0,7,6Z"></path><path d="M23,11H7a1,1,0,0,0,0,2H23a1,1,0,0,0,0-2Z"></path><path d="M23,18H7a1,1,0,0,0,0,2H23a1,1,0,0,0,0-2Z"></path><circle cx="2" cy="5" r="2"></circle><circle cx="2" cy="12" r="2"></circle><circle cx="2" cy="19" r="2"></circle></svg></button>
-                          </div>
-        
-                      </header>
+
+                    <header class="header_zTAx4zz">
+                      <div class="div_cr8aRBY">
+                        
+                        <button class="button_mzTN7sc" data-keydown="key-RfwNgjwVeLgKee7" onclick="history.back()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-svg-name="fi fi-rr-angle-left"><path d="M17.17,24a1,1,0,0,1-.71-.29L8.29,15.54a5,5,0,0,1,0-7.08L16.46.29a1,1,0,1,1,1.42,1.42L9.71,9.88a3,3,0,0,0,0,4.24l8.17,8.17a1,1,0,0,1,0,1.42A1,1,0,0,1,17.17,24Z"></path></svg></button>
+                        <button id="buttonPlay" class="button_mzTN7sc" data-keydown="key-RfwNgjwVeLgKee7"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-svg-name="fi fi-rr-list"><path d="M7,6H23a1,1,0,0,0,0-2H7A1,1,0,0,0,7,6Z"></path><path d="M23,11H7a1,1,0,0,0,0,2H23a1,1,0,0,0,0-2Z"></path><path d="M23,18H7a1,1,0,0,0,0,2H23a1,1,0,0,0,0-2Z"></path><circle cx="2" cy="5" r="2"></circle><circle cx="2" cy="12" r="2"></circle><circle cx="2" cy="19" r="2"></circle></svg></button>
+
+                      </div>
                     </header>
-                  
+ 
                     <div class="div_HR6EjtL">
                         <div id="itemNull" class="element-loader" style="--color:#ffffff; --pixel:60px"></div>
                         <div id="itemFalse" class="div_4el4d3E" style="display: none;"></div>
@@ -294,13 +292,13 @@ function one(id) {
 
     const index = keydowns.findIndex((keydown) => keydown === focus.element);
 
-    if (e.key == "ArrowRight") {
+    if (e.key == "ArrowDown") {
       if (keydowns[index + 1]) {
         keydowns[index + 1].focus();
       }
     }
 
-    if (e.key == "ArrowLeft") {
+    if (e.key == "ArrowUp") {
       if (keydowns[index - 1]) {
         keydowns[index - 1].focus();
       }

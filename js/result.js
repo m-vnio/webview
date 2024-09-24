@@ -90,7 +90,7 @@ addEventListener("DOMContentLoaded", () => {
       }
 
       if (
-        ["pelicula2", "serie2"].includes(
+        ["peliculasyseries"].includes(
           $elements.divGenres
             .querySelector("button.focus")
             .getAttribute("data-id")
@@ -405,7 +405,7 @@ addEventListener("DOMContentLoaded", () => {
     }
 
     if (
-      ["pelicula2", "serie2"].includes(
+      ["peliculasyseries"].includes(
         $elements.divGenres
           .querySelector("button.focus")
           .getAttribute("data-id")
