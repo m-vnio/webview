@@ -104,7 +104,7 @@ function one(id) {
     fetch(
       "https://api-fetch.victor01sp.com/get.php?url=" +
         encodeURIComponent(
-          `http://tvlatino.club:2082/player_api.php?username=MLKP90SAZs&password=4Z3KWMe7GnW2&action=get_vod_info&vod_id=${id}`
+          `http://tvlatino.club:2082/player_api.php?username=${CREDENTIALS_USER.username}&password=${CREDENTIALS_USER.password}&action=get_vod_info&vod_id=${id}`
         )
     )
       .then((res) => res.json())
