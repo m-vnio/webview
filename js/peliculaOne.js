@@ -117,7 +117,7 @@ function one(id) {
 
   $elements.buttonPlay.addEventListener("click", () => {
     Android.openWithDefault(
-      `http://tvlatino.club:2082/movie/MLKP90SAZs/4Z3KWMe7GnW2/${useThis.reactivity.datas.value.movie_data.stream_id}.${useThis.reactivity.datas.value.movie_data.container_extension}`,
+      `http://tvlatino.club:2082/movie/${CREDENTIALS_USER.username}/${CREDENTIALS_USER.password}/${useThis.reactivity.datas.value.movie_data.stream_id}.${useThis.reactivity.datas.value.movie_data.container_extension}`,
       "video/*"
     );
   });
