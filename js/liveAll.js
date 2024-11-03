@@ -103,7 +103,7 @@ function all() {
 
     console.log(encodeQueryString);
 
-    fetch(`https://api.victor01sp.com/iptv/api.php?${encodeQueryString}`)
+    fetch(`https://api.vniox.com/iptv/api.php?${encodeQueryString}`)
       .then((res) => res.json())
       .then((data) => {
         useThis.value.datas = useThis.value.datas.concat(data);
