@@ -65,9 +65,9 @@ function all() {
         template.innerHTML = `<button class="a_YOLFLmd" data-keydown="key-qCVDDxQ4q1Wnr5o" data-data="${encodeInput(
           JSON.stringify(data)
         )}">
-          <picture class="picture_GJjPp2J" style="aspect-ratio:1/1;"><img data-src="${`https://img.victor01sp.com/index.php?url=${encodeURIComponent(
+          <picture class="picture_GJjPp2J" style="aspect-ratio:1/1;"><img data-src="${FUNCTIONS_APP.img(
             data.stream_icon
-          )}`}"></picture>
+          )}"></picture>
           <span>${data.name}</span>
         </button>`;
 

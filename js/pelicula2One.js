@@ -8,10 +8,11 @@ function one(id) {
       datas: [],
     },
     functions: {
-      fetch: (url = "") =>
-        `https://api-fetch.victor01sp.com/get.php?url=${encodeURIComponent(
-          url
-        )}`,
+      // fetch: (url = "") =>
+      //   `https://api-fetch.victor01sp.com/get.php?url=${encodeURIComponent(
+      //     url
+      //   )}`,
+      fetch: (url = "") => url,
     },
   };
 
@@ -82,13 +83,14 @@ function one(id) {
     if (Object.keys(data).length) {
       console.log(data);
 
-      $elements.backdrop.src = `https://img.victor01sp.com/index.php?url=${encodeURIComponent(
+      $elements.backdrop.src = FUNCTIONS_APP.img(
         data.images.poster.replace("/original/", "/w342/")
-      )}`;
+      );
 
-      $elements.image.src = `https://img.victor01sp.com/index.php?url=${encodeURIComponent(
+      $elements.image.src = FUNCTIONS_APP.img(
         data.images.poster.replace("/original/", "/w342/")
-      )}`;
+      );
+
       $elements.title.textContent = data.titles.name;
       $elements.sinopsis.textContent = data.overview;
     }
@@ -97,8 +99,8 @@ function one(id) {
   useThis.functions.dataLoad = () => {
     const length = $elements.itemTrue.children.length;
 
-    fetchWebElement(
-      useThis.functions.fetch(`https://cuevana.biz/pelicula/${id}/${id}`)
+    fetchWebElementAndroid(
+      FUNCTIONS_APP.fetch(`https://cuevana.biz/pelicula/${id}/${id}`)
     ).then(($text) => {
       const __NEXT_DATA__ = JSON.parse(
         $text.querySelector("#__NEXT_DATA__").textContent
@@ -133,7 +135,7 @@ function one(id) {
 
     const video = videos.find((video) => video.cyberlocker == "streamwish");
 
-    fetchWebElement(useThis.functions.fetch(video.result)).then(($text) => {
+    fetchWebElementAndroid(FUNCTIONS_APP.fetch(video.result)).then(($text) => {
       Array.from($text.querySelectorAll("img")).forEach((img) => {
         img.removeAttribute("src");
         img.removeAttribute("srcset");

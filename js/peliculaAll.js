@@ -65,9 +65,9 @@ function all() {
         template.innerHTML = `<a href="./pelicula.html?id=${
           data.stream_id
         }" class="a_YOLFLmd" data-keydown="key-qCVDDxQ4q1Wnr5o">
-          <picture class="picture_GJjPp2J"><img data-src="${`https://img.victor01sp.com/index.php?url=${encodeURIComponent(
+          <picture class="picture_GJjPp2J"><img data-src="${FUNCTIONS_APP.img(
             data.stream_icon
-          )}`}"></picture>
+          )}"></picture>
           <span>${data.name}</span>
         </a>`;
 

@@ -76,13 +76,13 @@ function one(id) {
 
   useThis.reactivity.datas.observe((data) => {
     if (Object.keys(data).length) {
-      $elements.backdrop.src = `https://img.victor01sp.com/index.php?url=${encodeURIComponent(
+      $elements.backdrop.src = FUNCTIONS_APP.img(
         data.images.poster.replace("/original/", "/w342/")
-      )}`;
+      );
 
-      $elements.image.src = `https://img.victor01sp.com/index.php?url=${encodeURIComponent(
+      $elements.image.src = FUNCTIONS_APP.img(
         data.images.poster.replace("/original/", "/w342/")
-      )}`;
+      );
 
       $elements.title.textContent = data.titles.name;
       $elements.sinopsis.textContent = data.overview;
@@ -106,9 +106,9 @@ function one(id) {
           JSON.stringify(episode)
         )}">
           <picture class="picture_xPpWSeU">
-            <img style="margin-bottom:auto; border-radius:5px;" src="https://img.victor01sp.com/index.php?url=${
+            <img style="margin-bottom:auto; border-radius:5px;" src="${FUNCTIONS_APP.img(
               episode.image
-            }">
+            )}">
           </picture>
           <span class="span_Vth2Cyo">${episode.title}</span>
         </button>`;
@@ -124,8 +124,8 @@ function one(id) {
   useThis.functions.dataLoad = () => {
     const length = $elements.itemTrue.children.length;
 
-    fetchWebElement(
-      useThis.functions.fetch(`https://cuevana.biz/serie/${id}/${id}`)
+    fetchWebElementAndroid(
+      FUNCTIONS_APP.fetch(`https://cuevana.biz/serie/${id}/${id}`)
     ).then(($text) => {
       const __NEXT_DATA__ = JSON.parse(
         $text.querySelector("#__NEXT_DATA__").textContent
@@ -200,7 +200,7 @@ function one(id) {
       url = `https://cuevana.biz/${url}`;
 
       // console.log(data);
-      fetchWebElement(useThis.functions.fetch(url)).then(($text) => {
+      fetchWebElementAndroid(FUNCTIONS_APP.fetch(url)).then(($text) => {
         const __NEXT_DATA__ = JSON.parse(
           $text.querySelector("#__NEXT_DATA__").textContent
         );
@@ -216,64 +216,66 @@ function one(id) {
 
         const video = videos.find((video) => video.cyberlocker == "streamwish");
 
-        fetchWebElement(useThis.functions.fetch(video.result)).then(($text) => {
-          Array.from($text.querySelectorAll("img")).forEach((img) => {
-            img.removeAttribute("src");
-            img.removeAttribute("srcset");
-          });
+        fetchWebElementAndroid(FUNCTIONS_APP.fetch(video.result)).then(
+          ($text) => {
+            Array.from($text.querySelectorAll("img")).forEach((img) => {
+              img.removeAttribute("src");
+              img.removeAttribute("srcset");
+            });
 
-          Array.from($text.querySelectorAll("script")).forEach((script) => {
-            const urls = extractURLs(script.innerHTML);
-            if (urls[0]) {
-              const url = urls[0].slice(0, urls[0].lastIndexOf("'"));
+            Array.from($text.querySelectorAll("script")).forEach((script) => {
+              const urls = extractURLs(script.innerHTML);
+              if (urls[0]) {
+                const url = urls[0].slice(0, urls[0].lastIndexOf("'"));
 
-              if (url) {
-                const content = Android.getPageContent(url);
-                const $content = document.createElement("div");
-                $content.innerHTML = content;
+                if (url) {
+                  const content = Android.getPageContent(url);
+                  const $content = document.createElement("div");
+                  $content.innerHTML = content;
 
-                const script = Array.from(
-                  $content.querySelectorAll("script")
-                ).find((script) => script.innerHTML.includes("eval"));
+                  const script = Array.from(
+                    $content.querySelectorAll("script")
+                  ).find((script) => script.innerHTML.includes("eval"));
 
-                if (script) {
-                  const script2 = script.innerHTML.slice(
-                    script.innerHTML.indexOf("}('") + 2,
-                    script.innerHTML.lastIndexOf("))")
-                  );
-
-                  const final = new Function(
-                    `const fn = (...p) => p; return fn(${script2})`
-                  );
-
-                  const validate = (p, a, c, k, e, d) => {
-                    while (c--)
-                      if (k[c]) {
-                        p = p.replace(
-                          new RegExp("\\b" + c.toString(a) + "\\b", "g"),
-                          k[c]
-                        );
-                      }
-
-                    const scriptFunction = new Function(
-                      `return ${p.slice(p.indexOf("{"), p.indexOf(");"))}`
-                    );
-                    return scriptFunction();
-                  };
-
-                  if ($elements.divLoadVideo.style.display != "none") {
-                    Android.openWithDefault(
-                      validate(...final()).sources[0].file,
-                      "video/*"
+                  if (script) {
+                    const script2 = script.innerHTML.slice(
+                      script.innerHTML.indexOf("}('") + 2,
+                      script.innerHTML.lastIndexOf("))")
                     );
 
-                    history.back();
+                    const final = new Function(
+                      `const fn = (...p) => p; return fn(${script2})`
+                    );
+
+                    const validate = (p, a, c, k, e, d) => {
+                      while (c--)
+                        if (k[c]) {
+                          p = p.replace(
+                            new RegExp("\\b" + c.toString(a) + "\\b", "g"),
+                            k[c]
+                          );
+                        }
+
+                      const scriptFunction = new Function(
+                        `return ${p.slice(p.indexOf("{"), p.indexOf(");"))}`
+                      );
+                      return scriptFunction();
+                    };
+
+                    if ($elements.divLoadVideo.style.display != "none") {
+                      Android.openWithDefault(
+                        validate(...final()).sources[0].file,
+                        "video/*"
+                      );
+
+                      history.back();
+                    }
                   }
                 }
               }
-            }
-          });
-        });
+            });
+          }
+        );
 
         Array.from($text.querySelectorAll("img")).forEach((img) => {
           img.removeAttribute("src");

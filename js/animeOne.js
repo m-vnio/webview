@@ -9,11 +9,13 @@ function one(id) {
     },
     functions: {
       server: (url) => {
+        return url;
         return `https://api-fetch.victor01sp.com/get.php?url=${encodeURIComponent(
           url
         )}`;
       },
       img: (url) => {
+        return url.replace("http://", "https://");
         return `https://img.victor01sp.com/index.php?url=${encodeURIComponent(
           url
         )}`;
@@ -81,13 +83,10 @@ function one(id) {
   useThis.reactivity.datas.observe((data) => {
     if (Object.keys(data).length) {
       console.log(data);
-      $elements.backdrop.src = `https://img.victor01sp.com/index.php?url=${encodeURIComponent(
-        data.poster
-      )}`;
 
-      $elements.image.src = `https://img.victor01sp.com/index.php?url=${encodeURIComponent(
-        data.poster
-      )}`;
+      $elements.backdrop.src = FUNCTIONS_APP.img(data.poster);
+      $elements.image.src = FUNCTIONS_APP.img(data.poster);
+
       $elements.title.textContent = data.title;
       $elements.sinopsis.textContent = data.description;
 
@@ -131,8 +130,8 @@ function one(id) {
   };
 
   useThis.functions.dataLoad = () => {
-    fetchWebElement(
-      useThis.functions.server(`https://www3.animeflv.net/anime/${id}`)
+    fetchWebElementAndroid(
+      FUNCTIONS_APP.fetch(`https://www3.animeflv.net/anime/${id}`)
     ).then(($text) => {
       const script = Array.from($text.querySelectorAll("script")).find(
         (script) => script.innerHTML.includes("var anime_info =")
@@ -228,8 +227,8 @@ function one(id) {
 
       const data = JSON.parse(button.getAttribute("data-data"));
 
-      fetchWebElement(
-        useThis.functions.server(
+      fetchWebElementAndroid(
+        FUNCTIONS_APP.fetch(
           `https://www3.animeflv.net/ver/${useThis.reactivity.datas.value.href
             .split("/")
             .pop()}-${data}`

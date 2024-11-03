@@ -9,11 +9,13 @@ function all() {
     },
     functions: {
       server: (url) => {
-        return `https://api-fetch.victor01sp.com/get.php?url=${encodeURIComponent(
-          url
-        )}`;
+        return url;
+        // return `https://api-fetch.victor01sp.com/get.php?url=${encodeURIComponent(
+        //   url
+        // )}`;
       },
       img: (url) => {
+        return url.replace("http://", "https://");
         return `https://img.victor01sp.com/index.php?url=${encodeURIComponent(
           url
         )}`;
@@ -76,7 +78,7 @@ function all() {
         template.innerHTML = `<a href="./anime.html?id=${data.href
           .split("/")
           .pop()}" class="a_YOLFLmd" data-keydown="key-qCVDDxQ4q1Wnr5o">
-          <picture class="picture_GJjPp2J"><img data-src="${useThis.functions.img(
+          <picture class="picture_GJjPp2J"><img data-src="${FUNCTIONS_APP.img(
             data.poster
           )}"></picture>
           <span>${data.title}</span>
@@ -107,8 +109,8 @@ function all() {
 
     // const q = encodeURIComponent(search.get("search") || "");
 
-    fetchWebElement(
-      useThis.functions.server(
+    fetchWebElementAndroid(
+      FUNCTIONS_APP.fetch(
         `https://www3.animeflv.net/browse?page=${
           Math.floor($elements.itemTrue.children.length / 24) + 1
         }${
@@ -171,10 +173,10 @@ function all() {
       );
       button.classList.add("focus");
       $elements.itemTrue.innerHTML = "";
-   
-      useThis.value.datas = []
-      useThis.reactivity.load.value = true
-      useThis.functions.dataLoad(); 
+
+      useThis.value.datas = [];
+      useThis.reactivity.load.value = true;
+      useThis.functions.dataLoad();
     }
   });
 

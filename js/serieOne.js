@@ -68,13 +68,11 @@ function one(id) {
 
   useThis.reactivity.datas.observe((data) => {
     if (Object.keys(data).length) {
-      $elements.backdrop.src = `https://img.victor01sp.com/index.php?url=${encodeURIComponent(
-        data.info.cover
-      )}`;
+      $elements.backdrop.src = FUNCTIONS_APP.img(data.info.cover);
+      //
 
-      $elements.image.src = `https://img.victor01sp.com/index.php?url=${encodeURIComponent(
-        data.info.cover
-      )}`;
+      $elements.image.src = FUNCTIONS_APP.img(data.info.cover);
+
       $elements.title.textContent = data.info.name;
       $elements.sinopsis.textContent = data.info.plot;
 
@@ -99,9 +97,9 @@ function one(id) {
           JSON.stringify(episode)
         )}">
           <picture class="picture_xPpWSeU">
-            <img style="margin-bottom:auto; border-radius:5px;" src="https://img.victor01sp.com/index.php?url=${
+            <img style="margin-bottom:auto; border-radius:5px;" src="${FUNCTIONS_APP.img(
               episode.info.movie_image
-            }">
+            )}">
           </picture>
           <span class="span_Vth2Cyo">${episode.title}</span>
         </button>`;
@@ -190,7 +188,7 @@ function one(id) {
 
       const data = JSON.parse(button.getAttribute("data-data"));
       Android.openWithDefault(
-        `http://tvlatino.club:2082/series/${CREDENTIALS_USER.username}/${CREDENTIALS_USER.password}/${data.id}.${data.container_extension}`,
+        `http://tvlatino.club:2082/series/MLKP90SAZs/4Z3KWMe7GnW2/${data.id}.${data.container_extension}`,
         "video/*"
       );
     }

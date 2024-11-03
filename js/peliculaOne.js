@@ -74,13 +74,10 @@ function one(id) {
     if (Object.keys(data).length) {
       console.log(data);
 
-      $elements.backdrop.src = `https://img.victor01sp.com/index.php?url=${encodeURIComponent(
-        data.info.movie_image
-      )}`;
+      $elements.backdrop.src = FUNCTIONS_APP.img(data.info.movie_image);
 
-      $elements.image.src = `https://img.victor01sp.com/index.php?url=${encodeURIComponent(
-        data.info.movie_image
-      )}`;
+      $elements.image.src = FUNCTIONS_APP.img(data.info.movie_image);
+
       $elements.title.textContent = data.info.name;
       $elements.sinopsis.textContent = data.info.plot;
     }
@@ -117,7 +114,7 @@ function one(id) {
 
   $elements.buttonPlay.addEventListener("click", () => {
     Android.openWithDefault(
-      `http://tvlatino.club:2082/movie/${CREDENTIALS_USER.username}/${CREDENTIALS_USER.password}/${useThis.reactivity.datas.value.movie_data.stream_id}.${useThis.reactivity.datas.value.movie_data.container_extension}`,
+      `http://tvlatino.club:2082/movie/MLKP90SAZs/4Z3KWMe7GnW2/${useThis.reactivity.datas.value.movie_data.stream_id}.${useThis.reactivity.datas.value.movie_data.container_extension}`,
       "video/*"
     );
   });

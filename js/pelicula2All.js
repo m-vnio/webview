@@ -8,10 +8,11 @@ function all() {
       datas: [],
     },
     functions: {
-      fetch: (url = "") =>
-        `https://api-fetch.victor01sp.com/get.php?url=${encodeURIComponent(
-          url
-        )}`,
+      // fetch: (url = "") =>
+      //   `https://api-fetch.victor01sp.com/get.php?url=${encodeURIComponent(
+      //     url
+      //   )}`,
+      fetch: (url = "") => url,
     },
   };
 
@@ -71,9 +72,9 @@ function all() {
         template.innerHTML = `<a href="./pelicula2.html?id=${
           data.TMDbId
         }" class="a_YOLFLmd" data-keydown="key-qCVDDxQ4q1Wnr5o">
-          <picture class="picture_GJjPp2J"><img data-src="${`https://img.victor01sp.com/index.php?url=${encodeURIComponent(
+          <picture class="picture_GJjPp2J"><img data-src="${FUNCTIONS_APP.img(
             data.images.poster.replace("/original/", "/w185/")
-          )}`}"></picture>
+          )}"></picture>
           <span>${data.titles.name}</span>
         </a>`;
 
@@ -100,8 +101,8 @@ function all() {
       .querySelector("button.focus")
       .getAttribute("data-id");
 
-    fetchWebElement(
-      useThis.functions.fetch(
+    fetchWebElementAndroid(
+      FUNCTIONS_APP.fetch(
         gender
           ? `https://cuevana.biz/genero/${gender}/page/${length}`
           : `https://cuevana.biz/peliculas/page/${length}`

@@ -41,11 +41,13 @@ addEventListener("DOMContentLoaded", () => {
     },
     functions: {
       fetch: (url) => {
+        return url;
         return `https://api-fetch.victor01sp.com/get.php?url=${encodeURIComponent(
           url
         )}`;
       },
       img: (url) => {
+        return url.replace("http://", "https://");
         return `https://img.victor01sp.com/index.php?url=${encodeURIComponent(
           url
         )}`;
@@ -126,7 +128,7 @@ addEventListener("DOMContentLoaded", () => {
         template.innerHTML = `<a href="./anime.html?id=${data.href
           .split("/")
           .pop()}" class="a_YOLFLmd" data-keydown="key-qCVDDxQ4q1Wnr5o">
-          <picture class="picture_GJjPp2J"><img data-src="${useThis.functions.img(
+          <picture class="picture_GJjPp2J"><img data-src="${FUNCTIONS_APP.img(
             data.poster
           )}"></picture>
           <span>${data.title}</span>
@@ -158,9 +160,9 @@ addEventListener("DOMContentLoaded", () => {
         template.innerHTML = `<a href="./pelicula.html?id=${
           data.stream_id
         }" class="a_YOLFLmd" data-keydown="key-qCVDDxQ4q1Wnr5o">
-          <picture class="picture_GJjPp2J"><img data-src="${`https://img.victor01sp.com/index.php?url=${encodeURIComponent(
+          <picture class="picture_GJjPp2J"><img data-src="${FUNCTIONS_APP.img(
             data.stream_icon
-          )}`}"></picture>
+          )}"></picture>
           <span>${data.name}</span>
         </a>`;
 
@@ -193,9 +195,9 @@ addEventListener("DOMContentLoaded", () => {
         template.innerHTML = `<a href="./${type}.html?id=${
           data.TMDbId
         }" class="a_YOLFLmd" data-keydown="key-qCVDDxQ4q1Wnr5o">
-          <picture class="picture_GJjPp2J"><img data-src="${`https://img.victor01sp.com/index.php?url=${encodeURIComponent(
+          <picture class="picture_GJjPp2J"><img data-src="${FUNCTIONS_APP.img(
             data.images.poster.replace("/original/", "/w185/")
-          )}`}"></picture>
+          )}"></picture>
           <span>${data.titles.name}</span>
         </a>`;
 
@@ -217,9 +219,9 @@ addEventListener("DOMContentLoaded", () => {
         template.innerHTML = `<a href="./serie.html?id=${
           data.series_id
         }" class="a_YOLFLmd" data-keydown="key-qCVDDxQ4q1Wnr5o">
-          <picture class="picture_GJjPp2J"><img data-src="${`https://img.victor01sp.com/index.php?url=${encodeURIComponent(
+          <picture class="picture_GJjPp2J"><img data-src="${FUNCTIONS_APP.img(
             data.cover
-          )}`}"></picture>
+          )}"></picture>
           <span>${data.name}</span>
         </a>`;
 
@@ -249,9 +251,9 @@ addEventListener("DOMContentLoaded", () => {
         template.innerHTML = `<button class="a_YOLFLmd" data-keydown="key-qCVDDxQ4q1Wnr5o" data-data="${encodeInput(
           JSON.stringify(data)
         )}">
-          <picture class="picture_GJjPp2J" style="aspect-ratio:1/1;"><img data-src="${`https://img.victor01sp.com/index.php?url=${encodeURIComponent(
+          <picture class="picture_GJjPp2J" style="aspect-ratio:1/1;"><img data-src="${FUNCTIONS_APP.img(
             data.stream_icon
-          )}`}"></picture>
+          )}"></picture>
           <span>${data.name}</span>
         </button>`;
 
@@ -278,8 +280,8 @@ addEventListener("DOMContentLoaded", () => {
       page: Math.floor($elements.itemTrue.children.length / 24) + 1,
     });
 
-    fetchWebElement(
-      useThis.functions.fetch(
+    fetchWebElementAndroid(
+      FUNCTIONS_APP.fetch(
         `https://www3.animeflv.net/browse?${encodeQueryString}`
       )
     ).then((element) => {
@@ -325,8 +327,8 @@ addEventListener("DOMContentLoaded", () => {
   useThis.functions.dataLoadPelicula2 = () => {
     // const length = Math.floor($elements.itemTrue.children.length / 24) + 1;
 
-    fetchWebElement(
-      useThis.functions.fetch(
+    fetchWebElementAndroid(
+      FUNCTIONS_APP.fetch(
         `https://cuevana.biz/search?q=${encodeURIComponent(
           searchParams.get("search")
         )}`
@@ -453,7 +455,7 @@ addEventListener("DOMContentLoaded", () => {
     if (button) {
       const data = JSON.parse(button.getAttribute("data-data"));
       Android.openWithDefault(
-        `http://tvlatino.club:2082/live/${CREDENTIALS_USER.username}/${CREDENTIALS_USER.password}/${data.stream_id}.ts`,
+        `http://tvlatino.club:2082/live/MLKP90SAZs/4Z3KWMe7GnW2/${data.stream_id}.ts`,
         "video/*"
       );
     }
