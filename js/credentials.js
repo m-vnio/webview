@@ -5,7 +5,7 @@ const CREDENTIALS_USER = {
 
 const FUNCTIONS_APP = {
   fetch: (url = "") => url,
-  img: (url = "") => url.replace("http://", "https://"),
+  img: (url = "") => (url || "").replace("http://", "https://"),
 };
 
 function fetchWebElementAndroid(url) {
