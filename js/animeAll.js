@@ -113,12 +113,6 @@ function all() {
     //   }${gender ? `&genre[]=${gender.split(" ").join("-").toLowerCase()}` : ""}`
     // );
 
-    alert(
-      `https://www3.animeflv.net/browse?page=${
-        Math.floor($elements.itemTrue.children.length / 24) + 1
-      }${gender ? `&genre[]=${gender.split(" ").join("-").toLowerCase()}` : ""}`
-    );
-
     fetchWebElement(
       useThis.functions.server(
         `https://www3.animeflv.net/browse?page=${

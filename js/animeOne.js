@@ -9,8 +9,7 @@ function one(id) {
     },
     functions: {
       server: (url) => {
-        return url;
-        return `https://api-fetch.victor01sp.com/get.php?url=${encodeURIComponent(
+        return `https://fetch.vniox.com/get.php?url=${encodeURIComponent(
           url
         )}`;
       },
@@ -130,8 +129,8 @@ function one(id) {
   };
 
   useThis.functions.dataLoad = () => {
-    fetchWebElementAndroid(
-      FUNCTIONS_APP.fetch(`https://www3.animeflv.net/anime/${id}`)
+    fetchWebElement(
+      useThis.functions.server(`https://www3.animeflv.net/anime/${id}`)
     ).then(($text) => {
       const script = Array.from($text.querySelectorAll("script")).find(
         (script) => script.innerHTML.includes("var anime_info =")
@@ -227,8 +226,8 @@ function one(id) {
 
       const data = JSON.parse(button.getAttribute("data-data"));
 
-      fetchWebElementAndroid(
-        FUNCTIONS_APP.fetch(
+      fetchWebElement(
+        useThis.functions.server(
           `https://www3.animeflv.net/ver/${useThis.reactivity.datas.value.href
             .split("/")
             .pop()}-${data}`
