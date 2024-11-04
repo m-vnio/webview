@@ -9,9 +9,7 @@ function one(id) {
     },
     functions: {
       server: (url) => {
-        return `https://fetch.vniox.com/get.php?url=${encodeURIComponent(
-          url
-        )}`;
+        return `https://fetch.vniox.com/get.php?url=${encodeURIComponent(url)}`;
       },
       img: (url) => {
         return url.replace("http://", "https://");

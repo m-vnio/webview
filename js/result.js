@@ -41,14 +41,11 @@ addEventListener("DOMContentLoaded", () => {
     },
     functions: {
       fetch: (url) => {
-        return url;
-        return `https://api-fetch.victor01sp.com/get.php?url=${encodeURIComponent(
-          url
-        )}`;
+        return `https://fetch.vniox.com/get.php?url=${encodeURIComponent(url)}`;
       },
       img: (url) => {
         return url.replace("http://", "https://");
-        return `https://img.victor01sp.com/index.php?url=${encodeURIComponent(
+        return `https://img.vniox.com/index.php?url=${encodeURIComponent(
           url
         )}`;
       },
@@ -280,8 +277,8 @@ addEventListener("DOMContentLoaded", () => {
       page: Math.floor($elements.itemTrue.children.length / 24) + 1,
     });
 
-    fetchWebElementAndroid(
-      FUNCTIONS_APP.fetch(
+    fetchWebElement(
+      useThis.functions.fetch(
         `https://www3.animeflv.net/browse?${encodeQueryString}`
       )
     ).then((element) => {
@@ -315,7 +312,7 @@ addEventListener("DOMContentLoaded", () => {
       end: 50,
     });
 
-    fetch(`https://api.victor01sp.com/iptv/api.php?${encodeQueryString}`)
+    fetch(`https://api.vniox.com/iptv/api.php?${encodeQueryString}`)
       .then((res) => res.json())
       .then((data) => {
         useThis.value.datas = useThis.value.datas.concat(data);
@@ -361,7 +358,7 @@ addEventListener("DOMContentLoaded", () => {
       end: 50,
     });
 
-    fetch(`https://api.victor01sp.com/iptv/api.php?${encodeQueryString}`)
+    fetch(`https://api.vniox.com/iptv/api.php?${encodeQueryString}`)
       .then((res) => res.json())
       .then((data) => {
         useThis.value.datas = useThis.value.datas.concat(data);
@@ -380,7 +377,7 @@ addEventListener("DOMContentLoaded", () => {
       end: 50,
     });
 
-    fetch(`https://api.victor01sp.com/iptv/api.php?${encodeQueryString}`)
+    fetch(`https://api.vniox.com/iptv/api.php?${encodeQueryString}`)
       .then((res) => res.json())
       .then((data) => {
         useThis.value.datas = useThis.value.datas.concat(data);

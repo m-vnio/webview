@@ -5,7 +5,9 @@ const CREDENTIALS_USER = {
 
 const FUNCTIONS_APP = {
   fetch: (url = "") => url,
-  img: (url = "") => (url || "").replace("http://", "https://"),
+  img: (url = "") => {
+    return `https://img.vniox.com/index.php?url=${encodeURIComponent(url)}`;
+  },
 };
 
 function fetchWebElementAndroid(url) {

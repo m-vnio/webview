@@ -14,7 +14,7 @@ function all() {
       },
       img: (url) => {
         return url.replace("http://", "https://");
-        return `https://img.victor01sp.com/index.php?url=${encodeURIComponent(
+        return `https://img.vniox.com/index.php?url=${encodeURIComponent(
           url
         )}`;
       },
@@ -157,7 +157,7 @@ function all() {
     //   end: 50,
     // });
 
-    // fetch(`https://api.victor01sp.com/iptv/api.php?${encodeQueryString}`)
+    // fetch(`https://api.vniox.com/iptv/api.php?${encodeQueryString}`)
     //   .then((res) => res.json())
     //   .then((data) => {
     //     useThis.value.datas = useThis.value.datas.concat(data);

@@ -9,7 +9,7 @@ function all() {
     },
     functions: {
       fetch: (url = "") =>
-        `https://api-fetch.victor01sp.com/get.php?url=${encodeURIComponent(
+        `https://fetch.vniox.com/get.php?url=${encodeURIComponent(
           url
         )}`,
     },

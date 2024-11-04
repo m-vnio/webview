@@ -99,7 +99,7 @@ function one(id) {
     console.log(encodeQueryString);
 
     fetch(
-      "https://api-fetch.victor01sp.com/get.php?url=" +
+      "https://fetch.vniox.com/get.php?url=" +
         encodeURIComponent(
           `http://tvlatino.club:2082/player_api.php?username=${CREDENTIALS_USER.username}&password=${CREDENTIALS_USER.password}&action=get_vod_info&vod_id=${id}`
         )
