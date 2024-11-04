@@ -124,6 +124,7 @@ function all() {
         }`
       )
     ).then((element) => {
+      alert(element.outerHTML);
       const array = Array.from(
         element.querySelector(".ListAnimes.AX.Rows.A03.C02.D02").children
       ).map((li) => {
