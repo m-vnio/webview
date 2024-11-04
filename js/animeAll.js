@@ -9,10 +9,8 @@ function all() {
     },
     functions: {
       server: (url) => {
-        return url;
-        // return `https://api-fetch.victor01sp.com/get.php?url=${encodeURIComponent(
-        //   url
-        // )}`;
+        // return url;
+        return `https://fetch.vniox.com/get.php?url=${encodeURIComponent(url)}`;
       },
       img: (url) => {
         return url.replace("http://", "https://");
@@ -121,8 +119,8 @@ function all() {
       }${gender ? `&genre[]=${gender.split(" ").join("-").toLowerCase()}` : ""}`
     );
 
-    fetchWebElementAndroid(
-      FUNCTIONS_APP.fetch(
+    fetchWebElement(
+      useThis.functions.server(
         `https://www3.animeflv.net/browse?page=${
           Math.floor($elements.itemTrue.children.length / 24) + 1
         }${
@@ -130,7 +128,6 @@ function all() {
         }`
       )
     ).then((element) => {
-      alert(element.outerHTML);
       const array = Array.from(
         element.querySelector(".ListAnimes.AX.Rows.A03.C02.D02").children
       ).map((li) => {
