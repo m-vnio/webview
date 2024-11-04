@@ -109,6 +109,12 @@ function all() {
 
     // const q = encodeURIComponent(search.get("search") || "");
 
+    // console.log(
+    //   `https://www3.animeflv.net/browse?page=${
+    //     Math.floor($elements.itemTrue.children.length / 24) + 1
+    //   }${gender ? `&genre[]=${gender.split(" ").join("-").toLowerCase()}` : ""}`
+    // );
+
     fetchWebElementAndroid(
       FUNCTIONS_APP.fetch(
         `https://www3.animeflv.net/browse?page=${
@@ -130,6 +136,8 @@ function all() {
       });
 
       useThis.value.datas = useThis.value.datas.concat(array);
+
+      useThis.reactivity.load.value = true;
       useThis.reactivity.datas.value = array;
       useThis.reactivity.load.value = false;
 
