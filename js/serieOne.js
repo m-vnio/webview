@@ -188,7 +188,7 @@ function one(id) {
 
       const data = JSON.parse(button.getAttribute("data-data"));
       Android.openWithDefault(
-        `http://tvlatino.club:2082/series/MLKP90SAZs/4Z3KWMe7GnW2/${data.id}.${data.container_extension}`,
+        `http://tvlatino.club:2082/series/${CREDENTIALS_USER.username}/${CREDENTIALS_USER.password}/${data.id}.${data.container_extension}`,
         "video/*"
       );
     }
