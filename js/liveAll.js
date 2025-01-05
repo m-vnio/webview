@@ -138,7 +138,7 @@ function all() {
     if (button) {
       const data = JSON.parse(button.getAttribute("data-data"));
       Android.openWithDefault(
-        `http://tvlatino.club:2082/live/${CREDENTIALS_USER.username}/${CREDENTIALS_USER.password}/${data.stream_id}.ts`,
+        `http://goldfull.pro:8880/live/${CREDENTIALS_USER.username}/${CREDENTIALS_USER.password}/${data.stream_id}.ts`,
         "video/*"
       );
     }

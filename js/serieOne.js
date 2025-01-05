@@ -126,9 +126,9 @@ function one(id) {
     });
 
     fetch(
-      "https://fetch.vniox.com/get.php?url=" +
+      "https://api-fetch.vniox.com/get.php?url=" +
         encodeURIComponent(
-          `http://tvlatino.club:2082/player_api.php?username=${CREDENTIALS_USER.username}&password=${CREDENTIALS_USER.password}&action=get_series_info&series_id=${id}`
+          `http://goldfull.pro:8880/player_api.php?username=${CREDENTIALS_USER.username}&password=${CREDENTIALS_USER.password}&action=get_series_info&series_id=${id}`
         )
     )
       .then((res) => res.json())
@@ -188,7 +188,7 @@ function one(id) {
 
       const data = JSON.parse(button.getAttribute("data-data"));
       Android.openWithDefault(
-        `http://tvlatino.club:2082/series/${CREDENTIALS_USER.username}/${CREDENTIALS_USER.password}/${data.id}.${data.container_extension}`,
+        `http://goldfull.pro:8880/series/${CREDENTIALS_USER.username}/${CREDENTIALS_USER.password}/${data.id}.${data.container_extension}`,
         "video/*"
       );
     }

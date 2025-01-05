@@ -1,6 +1,6 @@
 const CREDENTIALS_USER = {
   username: "mksaa7D7SA",
-  password: "t5N25kaJUUCV",
+  password: "WgedSTLjCzr2",
 };
 
 const FUNCTIONS_APP = {
