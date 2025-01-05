@@ -126,7 +126,7 @@ function one(id) {
     });
 
     fetch(
-      "https://api-fetch.vniox.com/get.php?url=" +
+      "https://fetch.vniox.com/get.php?url=" +
         encodeURIComponent(
           `http://goldfull.pro:8880/player_api.php?username=${CREDENTIALS_USER.username}&password=${CREDENTIALS_USER.password}&action=get_series_info&series_id=${id}`
         )
