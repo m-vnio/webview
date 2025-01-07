@@ -40,14 +40,20 @@
   opacity: 0.7;
 
   border-radius: 15px;
+  outline: none;
 }
 
 .a_lW7dgpk:focus {
-  outline: 3px solid #ffffff;
+  background: #fff;
+}
+
+.a_lW7dgpk:focus svg {
+  fill: #000;
 }
 
 .a_lW7dgpk.focus {
   opacity: 1;
+  background: rgb(255 255 255 / 0.5);
 }
 
 .a_lW7dgpk span {

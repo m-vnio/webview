@@ -452,7 +452,7 @@ addEventListener("DOMContentLoaded", () => {
     if (button) {
       const data = JSON.parse(button.getAttribute("data-data"));
       Android.openWithDefault(
-        `http://goldfull.pro:8880/live/${CREDENTIALS_USER.username}/${CREDENTIALS_USER.password}/${data.stream_id}.ts`,
+        `${CREDENTIALS_USER.server}/live/${CREDENTIALS_USER.username}/${CREDENTIALS_USER.password}/${data.stream_id}.ts`,
         "video/*"
       );
     }

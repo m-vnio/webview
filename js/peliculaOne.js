@@ -101,7 +101,7 @@ function one(id) {
     fetch(
       "https://fetch.vniox.com/get.php?url=" +
         encodeURIComponent(
-          `http://goldfull.pro:8880/player_api.php?username=${CREDENTIALS_USER.username}&password=${CREDENTIALS_USER.password}&action=get_vod_info&vod_id=${id}`
+          `${CREDENTIALS_USER.server}/player_api.php?username=${CREDENTIALS_USER.username}&password=${CREDENTIALS_USER.password}&action=get_vod_info&vod_id=${id}`
         )
     )
       .then((res) => res.json())
@@ -114,7 +114,7 @@ function one(id) {
 
   $elements.buttonPlay.addEventListener("click", () => {
     Android.openWithDefault(
-      `http://goldfull.pro:8880/movie/${CREDENTIALS_USER.username}/${CREDENTIALS_USER.password}/${useThis.reactivity.datas.value.movie_data.stream_id}.${useThis.reactivity.datas.value.movie_data.container_extension}`,
+      `${CREDENTIALS_USER.server}/movie/${CREDENTIALS_USER.username}/${CREDENTIALS_USER.password}/${useThis.reactivity.datas.value.movie_data.stream_id}.${useThis.reactivity.datas.value.movie_data.container_extension}`,
       "video/*"
     );
   });

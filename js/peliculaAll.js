@@ -93,7 +93,6 @@ function all() {
 
     const encodeQueryString = encodeQueryObject({
       route: "/pelicula",
-      //   search: $elements.inputSearch.value.trim(),
       category: $elements.divGenres
         .querySelector("button.focus")
         .getAttribute("data-id"),

@@ -128,7 +128,7 @@ function one(id) {
     fetch(
       "https://fetch.vniox.com/get.php?url=" +
         encodeURIComponent(
-          `http://goldfull.pro:8880/player_api.php?username=${CREDENTIALS_USER.username}&password=${CREDENTIALS_USER.password}&action=get_series_info&series_id=${id}`
+          `${CREDENTIALS_USER.server}/player_api.php?username=${CREDENTIALS_USER.username}&password=${CREDENTIALS_USER.password}&action=get_series_info&series_id=${id}`
         )
     )
       .then((res) => res.json())
@@ -188,7 +188,7 @@ function one(id) {
 
       const data = JSON.parse(button.getAttribute("data-data"));
       Android.openWithDefault(
-        `http://goldfull.pro:8880/series/${CREDENTIALS_USER.username}/${CREDENTIALS_USER.password}/${data.id}.${data.container_extension}`,
+        `${CREDENTIALS_USER.server}/series/${CREDENTIALS_USER.username}/${CREDENTIALS_USER.password}/${data.id}.${data.container_extension}`,
         "video/*"
       );
     }

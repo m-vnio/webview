@@ -79,6 +79,10 @@
   aspect-ratio: 600/900;
   border-radius: 5px;
   overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .picture_GJjPp2J img {
@@ -191,7 +195,6 @@
   display: grid;
   grid-template-columns: 25% 1fr;
 
-  /* background: pink; */
   backdrop-filter: blur(150px);
 }
 
@@ -208,7 +211,8 @@
 
 .div_3mx7M8x {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr));
   padding: 10px;
   gap: 10px;
 }
@@ -267,4 +271,19 @@
 
   background: rgb(0 0 0 / 0.1);
   backdrop-filter: blur(15px);
+}
+
+@media (width <= 750px) {
+  .div_G4EThnx {
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    text-align: center;
+  }
+  .picture_rC8z3Zj img {
+    margin: auto;
+    height: initial;
+    width: min(100%, 200px);
+    aspect-ratio: initial;
+  }
 }
