@@ -1,7 +1,7 @@
 const CREDENTIALS_USER = {
   server: "http://goldfull.pro:8880",
-  username: "DNSJ65xax",
-  password: "aPPnHQNeZjPG",
+  username: "42u4T2H556",
+  password: "22cGAJMkBJUq",
 };
 
 const FUNCTIONS_APP = {
