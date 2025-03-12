@@ -115,15 +115,15 @@ function one(id) {
   useThis.functions.dataLoad = () => {
     const length = $elements.itemTrue.children.length;
 
-    const encodeQueryString = encodeQueryObject({
-      route: "/serie",
-      //   search: $elements.inputSearch.value.trim(),
-      //   category: $elements.divGenres
-      //     .querySelector("button.focus")
-      //     .getAttribute("data-id"),
-      start: length,
-      end: 50,
-    });
+    // const encodeQueryString = encodeQueryObject({
+    //   route: "/serie",
+    //   //   search: $elements.inputSearch.value.trim(),
+    //   //   category: $elements.divGenres
+    //   //     .querySelector("button.focus")
+    //   //     .getAttribute("data-id"),
+    //   start: length,
+    //   end: 50,
+    // });
 
     fetch(
       "https://fetch.vniox.com/get.php?url=" +

@@ -96,7 +96,7 @@ function one(id) {
       end: 50,
     });
 
-    console.log(encodeQueryString);
+    // console.log(encodeQueryString);
 
     fetch(
       "https://fetch.vniox.com/get.php?url=" +

@@ -1,367 +1,572 @@
 [
   {
-    "category_id": "520",
-    "category_name": "⚽️MUNDIAL SUB 20 FEMENINO⚽️",
+    "category_id": "53",
+    "category_name": "⭐ | EVENTOS NETFLIX Y DISNEY+ (A LA HORA DEL EVENTO)",
     "parent_id": 0
   },
   {
-    "category_id": "330",
-    "category_name": "⭐⚽EVENTOS 31 DE AGOSTO ⚽⭐",
+    "category_id": "507",
+    "category_name": "⭐ | CHAMPIONS LEAGUE",
     "parent_id": 0
   },
   {
-    "category_id": "484",
-    "category_name": "♥️⭐️EVENTOS PERU⭐️♥️",
+    "category_id": "707",
+    "category_name": "⭐️ | EVENTOS CONMEBOL",
     "parent_id": 0
   },
   {
-    "category_id": "513",
-    "category_name": "⛔️CASA DE LOS FAMOSOS MX⛔️",
+    "category_id": "517",
+    "category_name": "⭐ | EVENTOS PPV DEL DIA",
     "parent_id": 0
   },
   {
-    "category_id": "3",
-    "category_name": "●●PERU●●",
+    "category_id": "700",
+    "category_name": "⭐ | LA CASA DE LOS FAMOSOS COLOMBIA",
     "parent_id": 0
   },
   {
-    "category_id": "398",
-    "category_name": "⏩ PERU REGIONALES",
-    "parent_id": 0
-  },
-  {
-    "category_id": "1",
-    "category_name": "●●COLOMBIA●●",
-    "parent_id": 0
-  },
-  {
-    "category_id": "265",
-    "category_name": "⚫⚫ CINE",
-    "parent_id": 0
-  },
-  {
-    "category_id": "289",
-    "category_name": "⚫⚫CINE PREMIUM",
-    "parent_id": 0
-  },
-  {
-    "category_id": "421",
-    "category_name": "⚫⚫ENTRETENIMIENTO HD⚫⚫",
-    "parent_id": 0
-  },
-  {
-    "category_id": "415",
-    "category_name": "⚫⚫SONA VIX⚫⚫",
-    "parent_id": 0
-  },
-  {
-    "category_id": "408",
-    "category_name": "✅️  CABLE INNOVA PLUS ✅️ ",
-    "parent_id": 0
-  },
-  {
-    "category_id": "411",
-    "category_name": "●●GO TV●●",
-    "parent_id": 0
-  },
-  {
-    "category_id": "138",
-    "category_name": "⚫⚫ DEPORTES PERU",
-    "parent_id": 0
-  },
-  {
-    "category_id": "342",
-    "category_name": "⚫⚫MOVISTAR  5 MG",
-    "parent_id": 0
-  },
-  {
-    "category_id": "373",
-    "category_name": "⭕⭕  CINE  ⭕⭕",
-    "parent_id": 0
-  },
-  {
-    "category_id": "376",
-    "category_name": "⭕⭕ECUADOR⭕⭕",
-    "parent_id": 0
-  },
-  {
-    "category_id": "384",
-    "category_name": "⭕⭕MUNDO⭕⭕",
-    "parent_id": 0
-  },
-  {
-    "category_id": "461",
-    "category_name": "⭕CINE 24/7⭕",
-    "parent_id": 0
-  },
-  {
-    "category_id": "118",
-    "category_name": "⚫⚫STAR PLUS +",
+    "category_id": "706",
+    "category_name": "⭐ LA CASA DE LOS FAMOSOS ALL STAR",
     "parent_id": 0
   },
   {
     "category_id": "458",
-    "category_name": "⭕DAZN⭕",
+    "category_name": "⭐ | GRAM HERMANO ARGENTINA",
     "parent_id": 0
   },
   {
-    "category_id": "8",
-    "category_name": "⚫⚫DEPORTES",
-    "parent_id": 0
-  },
-  {
-    "category_id": "137",
-    "category_name": "⚫⚫DEPORTES COLOMBIA",
-    "parent_id": 0
-  },
-  {
-    "category_id": "140",
-    "category_name": "⚫⚫DEPORTES MEXICO",
-    "parent_id": 0
-  },
-  {
-    "category_id": "144",
-    "category_name": "⚫⚫DEPORTES CHILE",
-    "parent_id": 0
-  },
-  {
-    "category_id": "139",
-    "category_name": "⚫⚫DEPORTES ECUADOR",
-    "parent_id": 0
-  },
-  {
-    "category_id": "142",
-    "category_name": "⚫⚫DEPORTES ARGENTINA",
-    "parent_id": 0
-  },
-  {
-    "category_id": "417",
-    "category_name": "⚫⚫TIGOS⚫⚫",
-    "parent_id": 0
-  },
-  {
-    "category_id": "29",
-    "category_name": "⚫⚫USA SPORTS",
-    "parent_id": 0
-  },
-  {
-    "category_id": "9",
-    "category_name": "⚫⚫24/7",
-    "parent_id": 0
-  },
-  {
-    "category_id": "349",
-    "category_name": "⚫⚫ENTRETENIMIENTO",
+    "category_id": "167",
+    "category_name": "▶️ TV ECUADOR",
     "parent_id": 0
   },
   {
     "category_id": "14",
-    "category_name": "⚫⚫CULTURA",
-    "parent_id": 0
-  },
-  {
-    "category_id": "439",
-    "category_name": "⚫⚫BRASIL",
-    "parent_id": 0
-  },
-  {
-    "category_id": "134",
-    "category_name": "⚫⚫ENTERTAIMENT USA",
-    "parent_id": 0
-  },
-  {
-    "category_id": "24",
-    "category_name": "⚫⚫ Telemundo - Univision - Galavision - Unimas",
-    "parent_id": 0
-  },
-  {
-    "category_id": "383",
-    "category_name": "⚪⚪MEXICO ⚪⚪",
-    "parent_id": 0
-  },
-  {
-    "category_id": "155",
-    "category_name": "⚫⚫FOX SPORTS",
-    "parent_id": 0
-  },
-  {
-    "category_id": "13",
-    "category_name": "⚫⚫INFANTIL",
-    "parent_id": 0
-  },
-  {
-    "category_id": "10",
-    "category_name": "⚫⚫MOVISTAR",
-    "parent_id": 0
-  },
-  {
-    "category_id": "152",
-    "category_name": "⚫⚫MUSICA",
-    "parent_id": 0
-  },
-  {
-    "category_id": "19",
-    "category_name": "⚫⚫ARGENTINA",
+    "category_name": "⚽ DEPORTES ECUADOR",
     "parent_id": 0
   },
   {
     "category_id": "2",
-    "category_name": "⚫⚫ECUADOR",
+    "category_name": "▶️ TV PERU",
+    "parent_id": 0
+  },
+  {
+    "category_id": "424",
+    "category_name": "⚽ DEPORTES PERU",
     "parent_id": 0
   },
   {
     "category_id": "7",
-    "category_name": "⚫⚫CHILE",
+    "category_name": "▶️ TV COLOMBIA",
     "parent_id": 0
   },
   {
-    "category_id": "163",
-    "category_name": "⚫⚫PARAGUAY",
+    "category_id": "59",
+    "category_name": "⚽ DEPORTES COLOMBIA",
     "parent_id": 0
   },
   {
-    "category_id": "355",
-    "category_name": "⚫⚫HONDURAS",
+    "category_id": "20",
+    "category_name": "▶️ TV GUATEMALA",
     "parent_id": 0
   },
   {
-    "category_id": "11",
-    "category_name": "⚫⚫URUGUAY",
+    "category_id": "683",
+    "category_name": "⚽️ DEPORTES GUATEMALA",
     "parent_id": 0
   },
   {
-    "category_id": "38",
-    "category_name": "⚫⚫VENEZUELA",
+    "category_id": "67",
+    "category_name": "▶️ TV BOLIVIA",
     "parent_id": 0
   },
   {
-    "category_id": "39",
-    "category_name": "⚫⚫BOLIVIA",
+    "category_id": "129",
+    "category_name": "⚽ DEPORTES BOLIVIA",
     "parent_id": 0
   },
   {
-    "category_id": "12",
-    "category_name": "⚫⚫COSTA RICA",
+    "category_id": "44",
+    "category_name": "▶️ TV COSTA RICA",
+    "parent_id": 0
+  },
+  {
+    "category_id": "605",
+    "category_name": "⚽ DEPORTES COSTA RICA",
     "parent_id": 0
   },
   {
     "category_id": "18",
-    "category_name": "⚫⚫ESPAÑA",
+    "category_name": "▶️ TV MEXICO",
     "parent_id": 0
   },
   {
-    "category_id": "112",
-    "category_name": "⚫⚫EL SALVADOR",
+    "category_id": "654",
+    "category_name": "⚽ DEPORTES MX",
     "parent_id": 0
   },
   {
-    "category_id": "114",
-    "category_name": "⚫⚫REP DOMINICANA",
+    "category_id": "317",
+    "category_name": "⚽ LIGA MX",
     "parent_id": 0
   },
   {
-    "category_id": "17",
-    "category_name": "⚫⚫GUATEMALA",
+    "category_id": "556",
+    "category_name": "▶️ TV ARGENTINA",
     "parent_id": 0
   },
   {
-    "category_id": "419",
-    "category_name": "⚫⚫GUATEMALA LIGA ",
+    "category_id": "555",
+    "category_name": "⚽ DEPORTES ARGENTINA",
     "parent_id": 0
   },
   {
-    "category_id": "37",
-    "category_name": "⚫⚫RELIGIÓN",
+    "category_id": "60",
+    "category_name": "▶️ TV NICARAGUA",
     "parent_id": 0
   },
   {
-    "category_id": "162",
-    "category_name": "⚫⚫NICARAGUA",
+    "category_id": "183",
+    "category_name": "▶️ TV PANAMÁ",
     "parent_id": 0
   },
   {
-    "category_id": "329",
-    "category_name": "⚫⚫puerto Rico",
+    "category_id": "698",
+    "category_name": "⚽DEPORTES PANAMA",
     "parent_id": 0
   },
   {
-    "category_id": "124",
-    "category_name": "PLUTO CHILE",
+    "category_id": "3",
+    "category_name": "▶️ TV CHILE",
     "parent_id": 0
   },
   {
-    "category_id": "122",
-    "category_name": "PLUTO MEXICO",
+    "category_id": "656",
+    "category_name": "⚽️ DEPORTES CHILE",
     "parent_id": 0
   },
   {
-    "category_id": "485",
-    "category_name": "PLUTO ARGENTINA",
+    "category_id": "71",
+    "category_name": "▶️ TV HONDURAS",
     "parent_id": 0
   },
   {
-    "category_id": "486",
-    "category_name": "PLUTO DINAMARCA",
+    "category_id": "697",
+    "category_name": "⚽DEPORTES HONDURAS",
     "parent_id": 0
   },
   {
-    "category_id": "487",
-    "category_name": "PLUTO SWEDEN",
+    "category_id": "49",
+    "category_name": "▶️ | ESPN HD PREMIUM",
+    "parent_id": 0
+  },
+  {
+    "category_id": "57",
+    "category_name": "▶️ | FOX SPORT HD",
+    "parent_id": 0
+  },
+  {
+    "category_id": "544",
+    "category_name": "▶️ | DEPORTES PREMIUM",
+    "parent_id": 0
+  },
+  {
+    "category_id": "56",
+    "category_name": "▶️ TV REPUBLICA DOMINICANA",
+    "parent_id": 0
+  },
+  {
+    "category_id": "48",
+    "category_name": "▶️ TV EL SALVADOR",
+    "parent_id": 0
+  },
+  {
+    "category_id": "40",
+    "category_name": "▶️ TV PUERTO RICO",
+    "parent_id": 0
+  },
+  {
+    "category_id": "13",
+    "category_name": "▶️ TV VENEZUELA",
+    "parent_id": 0
+  },
+  {
+    "category_id": "65",
+    "category_name": "▶️ TV URUGUAY",
+    "parent_id": 0
+  },
+  {
+    "category_id": "9",
+    "category_name": "▶️ TV PARAGUAY",
+    "parent_id": 0
+  },
+  {
+    "category_id": "22",
+    "category_name": "▶️ TV CUBA",
+    "parent_id": 0
+  },
+  {
+    "category_id": "594",
+    "category_name": "▶️ USA SPORT",
+    "parent_id": 0
+  },
+  {
+    "category_id": "400",
+    "category_name": "▶️ USA CINE",
+    "parent_id": 0
+  },
+  {
+    "category_id": "41",
+    "category_name": "▶️ USA KIDS",
+    "parent_id": 0
+  },
+  {
+    "category_id": "523",
+    "category_name": "▶️ USA PREMIUM",
+    "parent_id": 0
+  },
+  {
+    "category_id": "430",
+    "category_name": "▶️ USA NOTICIAS",
+    "parent_id": 0
+  },
+  {
+    "category_id": "441",
+    "category_name": "▶️ USA MUSICA",
+    "parent_id": 0
+  },
+  {
+    "category_id": "459",
+    "category_name": "▶️ USA ENTRETENIMIENTO",
+    "parent_id": 0
+  },
+  {
+    "category_id": "469",
+    "category_name": "▶️ USA DOCUMENTALES",
+    "parent_id": 0
+  },
+  {
+    "category_id": "425",
+    "category_name": "▶️ USA LATINOS",
+    "parent_id": 0
+  },
+  {
+    "category_id": "411",
+    "category_name": "▶️ | NBA (SOLO DISPONIBLE EN EVENTOS)",
+    "parent_id": 0
+  },
+  {
+    "category_id": "665",
+    "category_name": "▶️ NBA-NHL-NFL-MLB EN VIVO",
+    "parent_id": 0
+  },
+  {
+    "category_id": "510",
+    "category_name": "▶️ | EVENTOS UFC - KNOUT - BOXING (A LA HORA DEL EVENTO)",
+    "parent_id": 0
+  },
+  {
+    "category_id": "454",
+    "category_name": "▶️ | VIX PREMIUM ( SOLO DISPONIBLE EN EVENTOS)",
+    "parent_id": 0
+  },
+  {
+    "category_id": "21",
+    "category_name": "▶️ | NHL - NFL (SOLO DISPONIBLE EN EVENTOS)",
+    "parent_id": 0
+  },
+  {
+    "category_id": "502",
+    "category_name": "▶️ | PREMIER LEAGUE",
+    "parent_id": 0
+  },
+  {
+    "category_id": "43",
+    "category_name": "▶️ | DIRECTV PREMIUM",
+    "parent_id": 0
+  },
+  {
+    "category_id": "508",
+    "category_name": "▶️ | TENNIS - F1  - CICLISMO",
+    "parent_id": 0
+  },
+  {
+    "category_id": "580",
+    "category_name": "▶️ | LMP (SOLO EVENTOS)",
+    "parent_id": 0
+  },
+  {
+    "category_id": "52",
+    "category_name": "⭐ | CINE PREMIUM EXCLUSIVO",
     "parent_id": 0
   },
   {
     "category_id": "488",
-    "category_name": "PLUTO NORWAY",
+    "category_name": "⭐ | STAR Y UNIVERSAL",
     "parent_id": 0
   },
   {
-    "category_id": "489",
-    "category_name": "PLUTO ITALIA",
+    "category_id": "516",
+    "category_name": "⭐ | PACK HBO",
     "parent_id": 0
   },
   {
-    "category_id": "490",
-    "category_name": "PLUTO FRANCIA",
+    "category_id": "12",
+    "category_name": "⭐ | TV CULTURA",
     "parent_id": 0
   },
   {
-    "category_id": "491",
-    "category_name": "PLUTO BRASIL",
+    "category_id": "548",
+    "category_name": "⭐ | UNIMAS - GALAVISIÓN",
     "parent_id": 0
   },
   {
-    "category_id": "492",
-    "category_name": "PLUTO ALEMANIA",
+    "category_id": "23",
+    "category_name": "⭐ | TELEMUNDO",
     "parent_id": 0
   },
   {
-    "category_id": "493",
-    "category_name": "PLUTO CANADA",
+    "category_id": "407",
+    "category_name": "⭐ | UNIVISIÓN",
     "parent_id": 0
   },
   {
-    "category_id": "494",
-    "category_name": "PLUTO ESPAÑA",
+    "category_id": "520",
+    "category_name": "⭐ | 4K CINEMA",
     "parent_id": 0
   },
   {
-    "category_id": "495",
-    "category_name": "PLUTO GREAN BRITANIA",
+    "category_id": "574",
+    "category_name": "⭐️ | 5 MEGAS ( CONEXIONES BAJAS )",
     "parent_id": 0
   },
   {
-    "category_id": "496",
-    "category_name": "PLUTO ESTADOS UNIDOS",
+    "category_id": "685",
+    "category_name": "⭐ | Canales Directos (ENC)",
     "parent_id": 0
   },
   {
-    "category_id": "35",
-    "category_name": "...",
+    "category_id": "19",
+    "category_name": "⭐ | TV INFANTILES",
     "parent_id": 0
   },
   {
-    "category_id": "519",
-    "category_name": "...",
+    "category_id": "24",
+    "category_name": "⭐ | TV NOVELAS",
+    "parent_id": 0
+  },
+  {
+    "category_id": "54",
+    "category_name": "⭐ | TV NOTICIAS",
+    "parent_id": 0
+  },
+  {
+    "category_id": "51",
+    "category_name": "⭐ | TV RELIGIOSOS",
+    "parent_id": 0
+  },
+  {
+    "category_id": "55",
+    "category_name": "⭐ | TV MUSICA",
+    "parent_id": 0
+  },
+  {
+    "category_id": "629",
+    "category_name": "⭐ | 24/7 PLUS",
+    "parent_id": 0
+  },
+  {
+    "category_id": "536",
+    "category_name": "⭐ | 24/7 NARCOS",
+    "parent_id": 0
+  },
+  {
+    "category_id": "569",
+    "category_name": "⭐️ | 24/7 ANIMADAS ADULTOS",
+    "parent_id": 0
+  },
+  {
+    "category_id": "631",
+    "category_name": "⭐ | 24/7 SAGAS",
+    "parent_id": 0
+  },
+  {
+    "category_id": "705",
+    "category_name": "⭐ 24/7 COMEDIA",
+    "parent_id": 0
+  },
+  {
+    "category_id": "159",
+    "category_name": "⭐ | 24/7 INFANTILES PLUS",
+    "parent_id": 0
+  },
+  {
+    "category_id": "567",
+    "category_name": "⭐️ | 24/7 ( ACCION - TERROR - SAGAS )",
+    "parent_id": 0
+  },
+  {
+    "category_id": "480",
+    "category_name": "⭐️ | 24/7 NOVELAS (COL-PER-VEN-CHI)",
+    "parent_id": 0
+  },
+  {
+    "category_id": "633",
+    "category_name": "⭐ | 24/7 DORAMAS",
+    "parent_id": 0
+  },
+  {
+    "category_id": "521",
+    "category_name": "⭐ | 24/7 ECUATORIANOS",
+    "parent_id": 0
+  },
+  {
+    "category_id": "428",
+    "category_name": "⭐ | NETFLIX CINEMA",
+    "parent_id": 0
+  },
+  {
+    "category_id": "571",
+    "category_name": "⭐️ | AMAZON CINEMA",
+    "parent_id": 0
+  },
+  {
+    "category_id": "669",
+    "category_name": "⭐ | DISNEY CINEMA",
+    "parent_id": 0
+  },
+  {
+    "category_id": "453",
+    "category_name": "⭐️ | HBO CINEMA",
+    "parent_id": 0
+  },
+  {
+    "category_id": "10",
+    "category_name": "▶️ | TV ESPAÑA",
+    "parent_id": 0
+  },
+  {
+    "category_id": "531",
+    "category_name": "▶️ | ESPAÑA TDT",
+    "parent_id": 0
+  },
+  {
+    "category_id": "535",
+    "category_name": "▶️ ESPAÑA  CINEMA",
+    "parent_id": 0
+  },
+  {
+    "category_id": "533",
+    "category_name": "▶️ ESPAÑA AUTONOMICOS",
+    "parent_id": 0
+  },
+  {
+    "category_id": "532",
+    "category_name": "▶️ | ESPAÑA DOCUMENTALES",
+    "parent_id": 0
+  },
+  {
+    "category_id": "534",
+    "category_name": "▶️ | ESPAÑA INFANTILES",
+    "parent_id": 0
+  },
+  {
+    "category_id": "28",
+    "category_name": "▶️ | MOVISTAR PLUS CINE",
+    "parent_id": 0
+  },
+  {
+    "category_id": "537",
+    "category_name": "▶️ | DAZN F1",
+    "parent_id": 0
+  },
+  {
+    "category_id": "481",
+    "category_name": "▶️ | ESPAÑA | DEPORTES",
+    "parent_id": 0
+  },
+  {
+    "category_id": "483",
+    "category_name": "⚽ M+ DEPORTES",
+    "parent_id": 0
+  },
+  {
+    "category_id": "602",
+    "category_name": "⚽ Movistar + La Liga",
+    "parent_id": 0
+  },
+  {
+    "category_id": "664",
+    "category_name": "⚽ | HYPERMOTION SOLO EVENTOS",
+    "parent_id": 0
+  },
+  {
+    "category_id": "547",
+    "category_name": "⚽ M+ LIGA HYPERMOTION",
+    "parent_id": 0
+  },
+  {
+    "category_id": "601",
+    "category_name": "⚽Liga De Campeones",
+    "parent_id": 0
+  },
+  {
+    "category_id": "155",
+    "category_name": "⚽ DAZN PREMIUM",
+    "parent_id": 0
+  },
+  {
+    "category_id": "153",
+    "category_name": "⚽ | DAZN LA LIGA",
+    "parent_id": 0
+  },
+  {
+    "category_id": "662",
+    "category_name": "TNT SPORTS  ⚽",
+    "parent_id": 0
+  },
+  {
+    "category_id": "666",
+    "category_name": "INSTAT FEF ✅",
+    "parent_id": 0
+  },
+  {
+    "category_id": "687",
+    "category_name": "▶️ UK",
+    "parent_id": 0
+  },
+  {
+    "category_id": "31",
+    "category_name": "▶️ TV CANADA",
+    "parent_id": 0
+  },
+  {
+    "category_id": "509",
+    "category_name": "▶️ USA LOCAL",
+    "parent_id": 0
+  },
+  {
+    "category_id": "403",
+    "category_name": "▶️ USA NETWORK",
+    "parent_id": 0
+  },
+  {
+    "category_id": "74",
+    "category_name": "⏩ BRASIL PREMIUM",
+    "parent_id": 0
+  },
+  {
+    "category_id": "486",
+    "category_name": "⛔ XXX +18 | PREMIUM",
+    "parent_id": 0
+  },
+  {
+    "category_id": "484",
+    "category_name": "⛔ XXX +18 | SEXTREME",
+    "parent_id": 0
+  },
+  {
+    "category_id": "34",
+    "category_name": "⛔ XXX +18 | 24/7",
     "parent_id": 0
   }
 ]

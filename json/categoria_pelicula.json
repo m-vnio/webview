@@ -1,352 +1,472 @@
 [
   {
-    "category_id": "412",
-    "category_name": "⭐ESTRENOS 2024",
+    "category_id": "590",
+    "category_name": "▶️  SUPER ESTRENOS ▶️",
     "parent_id": 0
   },
   {
-    "category_id": "428",
-    "category_name": "⭐️PEDIDOS",
+    "category_id": "358",
+    "category_name": "▶️  VOD/2024 ▶️",
     "parent_id": 0
   },
   {
-    "category_id": "141",
-    "category_name": "⭐ESTRENOS 2023",
+    "category_id": "501",
+    "category_name": "▶️  ESTRENOS HDCAM (BAJA CALIDAD) ▶️",
     "parent_id": 0
   },
   {
-    "category_id": "20",
-    "category_name": "⭐ESTRENOS 2022",
+    "category_id": "378",
+    "category_name": "▶️  CINE NETFLIX ▶️",
     "parent_id": 0
   },
   {
-    "category_id": "361",
-    "category_name": "⭐RECOMENDAS",
+    "category_id": "379",
+    "category_name": "▶️  CINE AMAZON ▶️",
     "parent_id": 0
   },
   {
-    "category_id": "95",
-    "category_name": "⭐ACCION",
+    "category_id": "175",
+    "category_name": "▶️  CINE DISNEY ▶️",
     "parent_id": 0
   },
   {
-    "category_id": "161",
-    "category_name": "⭐AVENTURA",
+    "category_id": "380",
+    "category_name": "▶️  CINE HBO ▶️",
     "parent_id": 0
   },
   {
-    "category_id": "96",
-    "category_name": "⭐ANIME",
+    "category_id": "658",
+    "category_name": "▶️ CINE NETFLIX CAST-MULTI  ▶️",
     "parent_id": 0
   },
   {
-    "category_id": "443",
-    "category_name": "⭐ANIMACION",
+    "category_id": "365",
+    "category_name": "⏩ VOD/HBO CASTELLANO",
+    "parent_id": 0
+  },
+  {
+    "category_id": "661",
+    "category_name": "▶️ CINE  DISNEY  CAST-MULTI ▶️",
+    "parent_id": 0
+  },
+  {
+    "category_id": "692",
+    "category_name": "▶️ | VOD CASTELLANO 2024 (2) ▶️",
+    "parent_id": 0
+  },
+  {
+    "category_id": "270",
+    "category_name": "▶️  | VOD CASTELLANO 2024  ▶️",
+    "parent_id": 0
+  },
+  {
+    "category_id": "250",
+    "category_name": "▶️ VOD/2023",
+    "parent_id": 0
+  },
+  {
+    "category_id": "331",
+    "category_name": "▶️ VOD/2022",
+    "parent_id": 0
+  },
+  {
+    "category_id": "185",
+    "category_name": "▶️ VOD/2021",
+    "parent_id": 0
+  },
+  {
+    "category_id": "655",
+    "category_name": "▶️ | VOD CASTELLANO 2023 MULTI ⭐",
     "parent_id": 0
   },
   {
     "category_id": "305",
-    "category_name": "⭐SEMANA SANTA",
+    "category_name": "⏩ VOD/2022 CASTELLANO",
     "parent_id": 0
   },
   {
-    "category_id": "338",
-    "category_name": "⭐ BÉLICO",
+    "category_id": "327",
+    "category_name": "▶️  PEDIDOS ▶️",
     "parent_id": 0
   },
   {
-    "category_id": "269",
-    "category_name": "⭐BOLLYWOOD",
+    "category_id": "297",
+    "category_name": "▶️ VOD MULTI PEDIDOS ▶️",
     "parent_id": 0
   },
   {
-    "category_id": "234",
-    "category_name": "⭐NETFLIX",
+    "category_id": "144",
+    "category_name": "▶️VOD/CASTELLANO",
     "parent_id": 0
   },
   {
-    "category_id": "46",
-    "category_name": "⭐COMEDY",
+    "category_id": "207",
+    "category_name": "▶️ VOD/ACCION",
     "parent_id": 0
   },
   {
-    "category_id": "97",
-    "category_name": "⭐COLOMBIANAS",
+    "category_id": "161",
+    "category_name": "▶️ VOD/CRIMEN",
     "parent_id": 0
   },
   {
-    "category_id": "115",
-    "category_name": "⭐CINE VARIADO",
+    "category_id": "216",
+    "category_name": "▶️ VOD/ANIMACION",
     "parent_id": 0
   },
   {
-    "category_id": "273",
-    "category_name": "⭐CINE ARGENTINA",
+    "category_id": "177",
+    "category_name": "▶️ VOD/AVENTURA",
     "parent_id": 0
   },
   {
-    "category_id": "444",
-    "category_name": "⭐CINE CHINO",
+    "category_id": "186",
+    "category_name": "▶️ VOD/BELICO",
     "parent_id": 0
   },
   {
-    "category_id": "452",
-    "category_name": " ⭐CINE COREANO",
+    "category_id": "206",
+    "category_name": "▶️ VOD/ARTES MARCIALES",
     "parent_id": 0
   },
   {
-    "category_id": "445",
-    "category_name": "⭐CINE CLASICO",
+    "category_id": "92",
+    "category_name": "▶️ VOD/CIENCIA FICCION CIFI",
     "parent_id": 0
   },
   {
-    "category_id": "446",
-    "category_name": "⭐CINE ESPAÑOL",
+    "category_id": "78",
+    "category_name": "▶️ VOD/COMEDIA",
     "parent_id": 0
   },
   {
-    "category_id": "22",
-    "category_name": "⭐CIENCIA FICCION",
+    "category_id": "240",
+    "category_name": "▶️ VOD/CORTOMETRAJES",
     "parent_id": 0
   },
   {
-    "category_id": "296",
-    "category_name": "⭐ESTRENOS HDCAM",
+    "category_id": "252",
+    "category_name": "▶️ VOD/FAMILIARES",
     "parent_id": 0
   },
   {
-    "category_id": "285",
-    "category_name": "⭐CINE PERUANO",
+    "category_id": "89",
+    "category_name": "▶️ VOD/DRAMA",
     "parent_id": 0
   },
   {
-    "category_id": "447",
-    "category_name": "⭐CINE ROMANTICO",
+    "category_id": "618",
+    "category_name": "▶️ VOD/FANTASIA",
     "parent_id": 0
   },
   {
-    "category_id": "47",
-    "category_name": "⭐CINE TERROR",
+    "category_id": "176",
+    "category_name": "▶️ VOD/RELIGIOSAS",
     "parent_id": 0
   },
   {
-    "category_id": "457",
-    "category_name": "⭐CINE SUSPENSO",
+    "category_id": "143",
+    "category_name": "▶️ VOD/NAVIDAD",
     "parent_id": 0
   },
   {
-    "category_id": "449",
-    "category_name": "⭐CINE WESTERN",
+    "category_id": "191",
+    "category_name": "▶️ VOD/DOCUMENTALES",
     "parent_id": 0
   },
   {
-    "category_id": "276",
-    "category_name": "⭐DC UNIVERSE",
+    "category_id": "142",
+    "category_name": "▶️ VOD/ROMANCE",
     "parent_id": 0
   },
   {
-    "category_id": "45",
-    "category_name": "⭐DRAMA",
+    "category_id": "90",
+    "category_name": "▶️ VOD/SUSPENSO",
     "parent_id": 0
   },
   {
-    "category_id": "44",
-    "category_name": "⭐FAMILIA",
+    "category_id": "79",
+    "category_name": "▶️ VOD/TERROR",
     "parent_id": 0
   },
   {
-    "category_id": "62",
-    "category_name": "⭐INFANTILES",
+    "category_id": "189",
+    "category_name": "▶️ VOD/INFANTILES",
     "parent_id": 0
   },
   {
-    "category_id": "310",
-    "category_name": "⭐INTRIGA",
+    "category_id": "308",
+    "category_name": "▶️ VOD/CLASICOS DE DISNEY",
     "parent_id": 0
   },
   {
-    "category_id": "448",
-    "category_name": " ⭐MARVEL STUDIOS",
+    "category_id": "636",
+    "category_name": "▶️ VOD/DISNEY LIVE ACTION",
     "parent_id": 0
   },
   {
-    "category_id": "438",
-    "category_name": "⭐️PELICULAS 60 FPS",
+    "category_id": "307",
+    "category_name": "▶️ VOD/CORTOS DISNEY",
     "parent_id": 0
   },
   {
-    "category_id": "436",
-    "category_name": "⭐️PELICULAS 3D",
+    "category_id": "634",
+    "category_name": "▶️ VOD/LEGO MOVIES",
     "parent_id": 0
   },
   {
-    "category_id": "103",
-    "category_name": "⭐CINE RETRO",
+    "category_id": "208",
+    "category_name": "▶️ VOD/ANIME",
     "parent_id": 0
   },
   {
-    "category_id": "434",
-    "category_name": "⭐️CINE MÉXICO",
+    "category_id": "615",
+    "category_name": "▶️ VOD/STUDIO GHIBLI",
     "parent_id": 0
   },
   {
-    "category_id": "51",
-    "category_name": "⭐PELICULAS ADULTOS",
+    "category_id": "377",
+    "category_name": "▶️ VOD/MUSICALES",
     "parent_id": 0
   },
   {
-    "category_id": "94",
-    "category_name": "⭐PELICULAS 4K",
+    "category_id": "192",
+    "category_name": "▶️ VOD/SAGAS",
     "parent_id": 0
   },
   {
-    "category_id": "81",
-    "category_name": "⭐RELIGION",
+    "category_id": "622",
+    "category_name": "▶️ SAGA/DRAGON BALL MOVIES",
     "parent_id": 0
   },
   {
-    "category_id": "105",
-    "category_name": "⭐SAGAS",
+    "category_id": "671",
+    "category_name": "▶️ COLECCION ADAM SANDLER",
     "parent_id": 0
   },
   {
-    "category_id": "80",
-    "category_name": "⭐VARIAS PELICULAS",
+    "category_id": "667",
+    "category_name": "▶️ COLECCION BRUCE LEE",
     "parent_id": 0
   },
   {
-    "category_id": "344",
-    "category_name": "⭐WWE",
+    "category_id": "681",
+    "category_name": "▶️ COLECCION CHUCK NORRIS",
     "parent_id": 0
   },
   {
-    "category_id": "472",
-    "category_name": "⭐️NAVIDAD",
+    "category_id": "180",
+    "category_name": "▶️ VOD/CANTINFLAS",
     "parent_id": 0
   },
   {
-    "category_id": "473",
-    "category_name": "⭐️HBO",
+    "category_id": "578",
+    "category_name": "▶️ COLECCION CANTINFLAS",
     "parent_id": 0
   },
   {
-    "category_id": "474",
-    "category_name": "⭐️DISNEY",
+    "category_id": "577",
+    "category_name": "▶️ COLECCION INDIA MARIA",
     "parent_id": 0
   },
   {
-    "category_id": "475",
-    "category_name": "⭐️CLASICAS",
+    "category_id": "672",
+    "category_name": "▶️ COLECCION JACKIE CHAN",
     "parent_id": 0
   },
   {
-    "category_id": "476",
-    "category_name": "⭐️ANTIGUAS",
+    "category_id": "679",
+    "category_name": "▶️ COLECCION LEONARDO DICAPRIO",
     "parent_id": 0
   },
   {
-    "category_id": "477",
-    "category_name": "⭐️ABC",
+    "category_id": "680",
+    "category_name": "▶️ COLECCION ROBIN WILLIAMS",
     "parent_id": 0
   },
   {
-    "category_id": "479",
-    "category_name": "⭐️⭐️CINE EN INGLÉS",
+    "category_id": "674",
+    "category_name": "▶️ COLECCION STEVE AUSTIN",
     "parent_id": 0
   },
   {
-    "category_id": "471",
-    "category_name": "⭐️MUSICA",
+    "category_id": "676",
+    "category_name": "▶️ COLECCION TOM HANKS",
     "parent_id": 0
   },
   {
-    "category_id": "470",
-    "category_name": "⭐️MISTERIO",
+    "category_id": "575",
+    "category_name": "▶️ COLECCION - RAPIDOS Y FURIOSOS",
     "parent_id": 0
   },
   {
-    "category_id": "469",
-    "category_name": "⭐️FANTACIA",
+    "category_id": "593",
+    "category_name": "▶️ VOD/WESTERN",
     "parent_id": 0
   },
   {
-    "category_id": "468",
-    "category_name": "⭐️FAMILIA",
+    "category_id": "624",
+    "category_name": "▶️ VOD/DC",
     "parent_id": 0
   },
   {
-    "category_id": "467",
-    "category_name": "⭐️DOCUMENTALES",
+    "category_id": "627",
+    "category_name": "▶️ VOD/MARVEL",
     "parent_id": 0
   },
   {
-    "category_id": "466",
-    "category_name": "⭐️DEPORTES",
+    "category_id": "184",
+    "category_name": "▶️ VOD/MARVEL Y DC",
     "parent_id": 0
   },
   {
-    "category_id": "464",
-    "category_name": "⭐️CRIMEN",
+    "category_id": "384",
+    "category_name": "▶️ VOD/ CALIDAD SD",
     "parent_id": 0
   },
   {
-    "category_id": "463",
-    "category_name": "⭐️CINE SAGA",
+    "category_id": "607",
+    "category_name": "▶️ VOD/CALIDAD 720p",
     "parent_id": 0
   },
   {
-    "category_id": "462",
-    "category_name": "⭐️ARTES MARCIALES",
+    "category_id": "608",
+    "category_name": "▶️ VOD/CALIDAD 1080p",
     "parent_id": 0
   },
   {
-    "category_id": "511",
-    "category_name": "CINE URUGUAY",
+    "category_id": "210",
+    "category_name": "▶️ VOD/4K",
     "parent_id": 0
   },
   {
-    "category_id": "510",
-    "category_name": "CINE REP. DOMINICANA",
+    "category_id": "644",
+    "category_name": "▶️ VOD/GUATEMALTECAS",
     "parent_id": 0
   },
   {
-    "category_id": "509",
-    "category_name": "CINE PUERTO RICO",
+    "category_id": "367",
+    "category_name": "▶️ VOD/ARGENTINAS",
     "parent_id": 0
   },
   {
-    "category_id": "508",
-    "category_name": "CINE PERU",
+    "category_id": "368",
+    "category_name": "▶️ VOD/BOLIVIA",
     "parent_id": 0
   },
   {
-    "category_id": "507",
-    "category_name": "CINE MEXICO",
+    "category_id": "369",
+    "category_name": "▶️ VOD/CHILE",
     "parent_id": 0
   },
   {
-    "category_id": "506",
-    "category_name": "CINE ECUADOR",
+    "category_id": "198",
+    "category_name": "▶️ VOD/COLOMBIANAS",
     "parent_id": 0
   },
   {
-    "category_id": "499",
-    "category_name": "CINE CHILE",
+    "category_id": "366",
+    "category_name": "▶️ VOD/ECUATORIANAS",
     "parent_id": 0
   },
   {
-    "category_id": "498",
-    "category_name": "CINE BOLIVIA",
+    "category_id": "603",
+    "category_name": "▶️ VOD/HINDI",
     "parent_id": 0
   },
   {
-    "category_id": "497",
-    "category_name": "CINE ARGENTINA",
+    "category_id": "119",
+    "category_name": "▶️ VOD/MEXICANO",
     "parent_id": 0
   },
   {
-    "category_id": "512",
-    "category_name": "CINE VENEZUELA",
+    "category_id": "371",
+    "category_name": "▶️ VOD/PERU",
+    "parent_id": 0
+  },
+  {
+    "category_id": "372",
+    "category_name": "▶️ VOD/PUERTO RICO",
+    "parent_id": 0
+  },
+  {
+    "category_id": "373",
+    "category_name": "▶️ VOD/REPUBLICA DOMINICANA",
+    "parent_id": 0
+  },
+  {
+    "category_id": "374",
+    "category_name": "▶️ VOD/URUGUAY",
+    "parent_id": 0
+  },
+  {
+    "category_id": "375",
+    "category_name": "▶️ VOD/VENEZUELA",
+    "parent_id": 0
+  },
+  {
+    "category_id": "212",
+    "category_name": "▶️ VOD/CONCIERTOS",
+    "parent_id": 0
+  },
+  {
+    "category_id": "623",
+    "category_name": "▶️ VOD/HUMOR",
+    "parent_id": 0
+  },
+  {
+    "category_id": "690",
+    "category_name": "▶️ COLECCION PEDRO INFANTE",
+    "parent_id": 0
+  },
+  {
+    "category_id": "620",
+    "category_name": "▶️  VOD/DEPORTES",
+    "parent_id": 0
+  },
+  {
+    "category_id": "388",
+    "category_name": "▶️ VOD/WWE",
+    "parent_id": 0
+  },
+  {
+    "category_id": "222",
+    "category_name": "▶️ VOD/KARAOKE",
+    "parent_id": 0
+  },
+  {
+    "category_id": "238",
+    "category_name": "▶️ VOD/FITNESS",
+    "parent_id": 0
+  },
+  {
+    "category_id": "363",
+    "category_name": "⏩ VOD/ANTIGUAS CASTELLANO",
+    "parent_id": 0
+  },
+  {
+    "category_id": "364",
+    "category_name": "⏩ VOD/CLASICAS CASTELLANO",
+    "parent_id": 0
+  },
+  {
+    "category_id": "257",
+    "category_name": "VOD/PREMIERE MOVIE INGLES",
+    "parent_id": 0
+  },
+  {
+    "category_id": "641",
+    "category_name": "VOD/SUBTITULADA VOSE",
+    "parent_id": 0
+  },
+  {
+    "category_id": "193",
+    "category_name": "⛔ ADULTOS/HETERO ⛔",
+    "parent_id": 0
+  },
+  {
+    "category_id": "298",
+    "category_name": "⛔ ADULTOS/ONLYFANS ⛔",
     "parent_id": 0
   }
 ]
