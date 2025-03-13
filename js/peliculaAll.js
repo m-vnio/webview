@@ -266,7 +266,7 @@ function all() {
     }
   });
 
-  fetch("./json/categoria_pelicula.json")
+  fetch("https://api.vniox.com/iptv/api.php?route=category-film")
     .then((res) => res.json())
     .then((json) => {
       const fragment = document.createDocumentFragment();
