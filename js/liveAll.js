@@ -280,7 +280,7 @@ function all() {
     }
   });
 
-  fetch("./json/categoria_live.json")
+  fetch("https://api.vniox.com/iptv/api.php?route=category-live")
     .then((res) => res.json())
     .then((json) => {
       const fragment = document.createDocumentFragment();
