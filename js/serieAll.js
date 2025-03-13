@@ -269,7 +269,7 @@ function all() {
     }
   });
 
-  fetch("./json/categoria_series.json")
+  fetch("https://api.vniox.com/iptv/api.php?route=category-serie")
     .then((res) => res.json())
     .then((json) => {
       const fragment = document.createDocumentFragment();
